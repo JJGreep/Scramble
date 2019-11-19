@@ -11,6 +11,12 @@
 	<groupId>com.scramble</groupId>
 	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<distributionManagement>
+		<repository>
+			<id>Scramble</id>
+			<url>https://github.com/JJGreep/Scramble</url>
+		</repository>
+	</distributionManagement>
 	<name>backend</name>
 	<description>Scramble Restaurants Application</description>
 
