@@ -1,5 +1,3 @@
-language: node
-jdk: openjdk11
-before_script: cd backend
-script: mvn deploy
+language: java
+
 
