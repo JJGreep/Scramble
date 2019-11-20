@@ -1,4 +1,4 @@
 language: node
 jdk: openjdk11
-script: mvn deploy
+script: mvn deploy -X
 before_script: cd backend
