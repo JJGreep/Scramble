@@ -1,4 +1,5 @@
 language: java
 before_install:
+  - cd backend
   - chmod +x mvnw
 
