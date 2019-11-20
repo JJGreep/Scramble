@@ -14,7 +14,7 @@
 	<distributionManagement>
 		<repository>
 			<id>Scramble</id>
-			<url>https://github.com/JJGreep/Scramble</url>
+			<url>https://maven.pkg.github.com/JJGreep/Scramble</url>
 		</repository>
 	</distributionManagement>
 	<name>backend</name>
