@@ -24,8 +24,8 @@
     flex: 1;
   }
 
-  .toolbar {
-    height: 60px;
+  .header {
+    height: 40px;
     margin: -8px;
     display: flex;
     align-items: center;
@@ -34,15 +34,31 @@
     font-weight: 600;
   }
 
-  .toolbar img {
+  .header span {
+    margin-right: 16px;
+  }
+
+  .header img {
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
+  .header #navbarbutton {
+    background-color: #ffffff;
+    padding: 15px;
+    align-items: center;
+    display: flex;
   }
 
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
+  .header #navbarbutton:hover {
+    background-color: #FFD185;
+  }
+
+  .header #loginbutton {
+    background-color: #FFD185;
+    color: #47525E;
+    padding: 5px 0;
+    width: 108px;
+    text-align: center;
+    margin-right: 25px;
+    border-radius: 5px;
   }
