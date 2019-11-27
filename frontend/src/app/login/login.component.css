@@ -1,0 +1,45 @@
+.registerbutton{
+    color: #47525E;
+    border: none;
+    padding: 7px 3%;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Helvetica;
+    
+  }
+
+  .background{
+    background-image: url("../../assets/image/background.jpg");
+    background-size: cover;
+
+    position: fixed;
+    padding: 0;
+    margin: auto;
+  
+    top: 60px;
+    left:0;
+  
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .shadow-white-background{
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+
+  .login-text h1{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+.login-text p{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
