@@ -50,6 +50,8 @@
     padding: 15px;
     align-items: center;
     display: flex;
+    cursor: pointer;
+    cursor: hand;
   }
 
   .header .navbarbutton:hover {
@@ -59,10 +61,15 @@
   .header .loginbutton {
     background-color: #FFD185;
     color: #47525E;
-    padding: 7px 0;
-    width: 108px;
+    padding: 7px 3%;
     text-align: center;
     margin-top: 2px;
     margin-right: 25px;
     border-radius: 5px;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .header .loginbutton:hover{
+    background-color: #FFBA5C;
   }
