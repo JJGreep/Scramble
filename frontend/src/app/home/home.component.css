@@ -21,10 +21,6 @@
     border: solid ghostwhite;
   }
 
-  a:link {
-    text-decoration: none !important;
-  }
-
   .spacer {
     flex: 1;
   }
