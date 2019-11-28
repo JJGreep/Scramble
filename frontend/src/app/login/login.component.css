@@ -28,20 +28,28 @@
   .shadow-white-background{
     background-color: white;
     width: 25%;
-    height: 29%;
+    height: 50%;
     margin: auto;
     margin-top: 8%;
     margin-bottom: 5%;
     border-radius: 25px;
   }
 
+  .login-text {
+    position: relative;
+    top: 20%;
+  }
+
   .login-text h1{
     text-align: center;
+    color: #47525E;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
 .login-text p{
     text-align: center;
+    margin-top: -5%;
+    color: #8190A5;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .sign-in-button{
@@ -55,7 +63,17 @@
     cursor: hand;
     font-family: Helvetica;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 6% auto;
   }
+
+.sign-in-button:link{
+}
+
+.input {
+    padding: 3% 3%;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px inset #47525E;
+    margin: 3% 11.5%;
+    text-decoration: none !important;
+}

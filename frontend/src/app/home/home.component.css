@@ -21,6 +21,10 @@
     border: solid ghostwhite;
   }
 
+  a:link {
+    text-decoration: none !important;
+  }
+
   .spacer {
     flex: 1;
   }
@@ -49,6 +53,7 @@
 
   .shadow-background{
     background-color: rgba(52,63, 75, 0.5);
+    border-radius: 25px;
     width: 50%;
     height: 50%;
     margin: auto;
