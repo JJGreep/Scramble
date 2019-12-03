@@ -42,21 +42,8 @@
       <div class="text-step-three">
         <h2>Step three</h2>
         <h3>I want to travel up to...</h3>
-        <div class="value">0
-          <script>
-            var elem = document.querySelector('input[type="range"]');
-
-            var rangeValue = function(){
-              var newValue = elem.value;
-              var target = document.querySelector('.value');
-              target.innerHTML = newValue;
-            }
-
-            elem.addEventListener("input", rangeValue);
-          </script>
-        </div>
-        <input type="range" min="0" max="10" step="1" value="0">
-
+        <div class="value">0</div>
+        <input type="range" min="0" max="25" step="5" value="0">
       </div>
     </div>
   </div>
