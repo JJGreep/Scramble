@@ -1,0 +1,86 @@
+.background{
+  background-image: url("../../assets/image/background.jpg");
+  background-size: cover;
+
+  position: fixed;
+  padding: 0;
+  margin: auto;
+
+  top: 60px;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.shadow-white-background-1{
+  background-color: white;
+  width: 35%;
+  height: 60%;
+  margin-top: 8%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border-radius: 25px;
+}
+.shadow-white-background-2{
+  background-color: white;
+  width: 35%;
+  height: 60%;
+  margin-top: 8%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  border-radius: 25px;
+}
+
+.find-restaurant-title{
+  text-align: center;
+  color: #47525E;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.text-step-one h2{
+  text-align: center;
+  color: #ff861f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.text-step-one h3{
+  text-align: center;
+  color: #47525E;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.group-checkbox-food{
+  text-align: center;
+  color: #47525E;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.find-step-two{
+  text-align: center;
+  color: #ff861f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.text-step-two h3{
+  text-align: center;
+  color: #47525E;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.group-checkbox-foodchoice{
+  text-align: center;
+  color: #47525E;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.test{
+  background-color: white;
+  width: 35%;
+  height: 60%;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  border-radius: 25px;
+
+}
