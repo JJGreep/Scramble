@@ -17,7 +17,7 @@
   background-color: rgba(255,255,255, 0.9);
   width: 35%;
   height: 75%;
-  margin-top: 8%;
+  margin-top: 4%;
   margin-left: 5%;
   margin-bottom: 5%;
   border-radius: 25px;
@@ -70,10 +70,10 @@
 .background .result-box{
     background-color: rgba(255,255,255, 0.9);
     width: 35%;
-    height: 60%;
-    margin-top: 8%;
+    height: 75%;
+    margin-top: 0.6%;
     margin-left: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     border-radius: 25px;
     position: relative;
     bottom: 86.4%;
