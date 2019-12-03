@@ -67,11 +67,11 @@
   .header .loginbutton {
     background-color: #FFD185;
     color: #47525E;
-    padding: 7px 2%;
+    padding: 1vh 2vw;
     text-align: center;
     margin-top: 2px;
     margin-right: 25px;
-    border-radius: 5px;
+    border-radius: 0.5vw;
     cursor: pointer;
     cursor: hand;
   }
