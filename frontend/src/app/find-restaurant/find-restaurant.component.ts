@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {element} from "protractor";
 
 @Component({
   selector: 'app-find-restaurant',
@@ -11,15 +12,14 @@ export class FindRestaurantComponent implements OnInit {
   }
 
   ngOnInit() {
-  var elem = document.querySelector('input[type="range"]');
+    var elem = document.querySelector('input[type="range"]');
 
-  var rangeValue = function(){
-    var newValue = elem.value;
-    var target = document.querySelector('.value');
-    target.innerHTML = newValue;
+    var rangeValue = function () {
+      var newValue = elem.value;
+      var target = document.querySelector('.value');
+      target.innerHTML = newValue;
+    }
+
+    elem.addEventListener("input", rangeValue);
   }
-
-  elem.addEventListener("input", rangeValue);
-  }
-
 }
