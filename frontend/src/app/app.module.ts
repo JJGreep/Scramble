@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
 import { GroupsComponent } from './groups/groups.component';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GroupsComponent } from './groups/groups.component';
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
-    GroupsComponent
+    GroupsComponent,
+    RestaurantDetailComponent
   ],
   imports: [
     BrowserModule,
