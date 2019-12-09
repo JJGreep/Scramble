@@ -1,3 +1,5 @@
+import {Location} from "./Location";
+
 export class Restaurant{
   id : number;
   name: string;
@@ -6,5 +8,5 @@ export class Restaurant{
   pirce_range: number;
   // user_rating:
   photos_url: string;
-  phone_numbers: number;
+  phone_numbers: string;
 }
