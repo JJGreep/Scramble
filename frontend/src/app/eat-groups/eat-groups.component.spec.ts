@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GroupsComponent } from './groups.component';
+import { EatGroupsComponent } from './eat-groups.component';
 
 describe('GroupsComponent', () => {
-  let component: GroupsComponent;
-  let fixture: ComponentFixture<GroupsComponent>;
+  let component: EatGroupsComponent;
+  let fixture: ComponentFixture<EatGroupsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GroupsComponent ]
+      declarations: [ EatGroupsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GroupsComponent);
+    fixture = TestBed.createComponent(EatGroupsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

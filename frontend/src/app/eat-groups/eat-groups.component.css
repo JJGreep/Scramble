@@ -63,7 +63,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.groups-text{
+.eat-groups-text{
   color: white;
   position: relative;
   left: 2vw;
@@ -73,12 +73,12 @@
   padding-bottom: 8vh;
 }
 
-.groups-text h2 {
+.eat-groups-text h2 {
   font-weight: 400;
   font-size: 3vw;
 }
 
-.groups-text p {
+.eat-groups-text p {
   font-size: 1vw;
 }
 

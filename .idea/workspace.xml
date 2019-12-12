@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Mock-eat-groups.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/eat-group.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,31 +20,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TpwmOFkU8F3IwPlllCi8VUgJY8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="ts.external.directory.path" value="C:\Users\Julia van Driel\Documents\GitHub\Scramble\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -78,7 +96,14 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="843" y="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576183836073">
+      <screen x="0" y="23" width="1920" height="1137" />
+    </state>
+    <state x="843" y="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1137@0.23.1920.1137" timestamp="1576183836073" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1575369225588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
