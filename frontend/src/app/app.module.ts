@@ -8,8 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
-import { GroupsComponent } from './groups/groups.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+import { EatgroupComponent } from './eatgroup/eatgroup.component';
+//import { GroupsComponent } from './groups/groups.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +20,9 @@ import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
-    GroupsComponent,
-    RestaurantDetailComponent
+ //   GroupsComponent,
+    RestaurantDetailComponent,
+ EatgroupComponent
   ],
   imports: [
     BrowserModule,

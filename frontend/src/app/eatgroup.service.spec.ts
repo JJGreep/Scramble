@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EatGroupsService } from './eat-groups.service';
+import { EatgroupService } from './eatgroup.service';
 
-describe('EatGroupsService', () => {
+describe('EatgroupService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: EatGroupsService = TestBed.get(EatGroupsService);
+    const service: EatgroupService = TestBed.get(EatgroupService);
     expect(service).toBeTruthy();
   });
 });

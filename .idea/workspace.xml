@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/Mock-eat-groups.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/eat-group.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/Mock-eat-groups.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/groups/groups.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-group.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-groups.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-groups.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/eat-groups/eat-groups.component.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,7 @@
       <workItem from="1575454851443" duration="134000" />
       <workItem from="1575461807376" duration="607000" />
       <workItem from="1575464444476" duration="3733000" />
+      <workItem from="1576422771638" duration="1591000" />
     </task>
     <servers />
   </component>
@@ -100,6 +101,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="253" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576423161244">
+      <screen x="0" y="23" width="1920" height="1137" />
+    </state>
+    <state x="424" y="253" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.365.1920.1177/-1680.23.1680.1027/0.23.1920.1137@0.23.1920.1137" timestamp="1576423161244" />
     <state x="843" y="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576183836073">
       <screen x="0" y="23" width="1920" height="1137" />
     </state>
