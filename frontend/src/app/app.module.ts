@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,8 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
-import { EatgroupComponent } from './eatgroup/eatgroup.component';
-//import { GroupsComponent } from './groups/groups.component';
+import { EatgroupListComponent } from './eatgroup-list/eatgroup-list.component';
+import { EatgroupCreateComponent } from './eatgroup-create/eatgroup-create.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { EatgroupComponent } from './eatgroup/eatgroup.component';
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
- //   GroupsComponent,
     RestaurantDetailComponent,
- EatgroupComponent
+    EatgroupListComponent,
+    EatgroupCreateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

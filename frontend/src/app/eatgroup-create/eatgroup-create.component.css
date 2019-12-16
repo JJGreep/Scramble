@@ -1,0 +1,97 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-control-name {
+  margin-top: 7px;
+
+}
+
+.create-button {
+  background-color: white;
+  color: #47525E;
+  border: none;
+  margin-top: 15px;
+  padding-top: 7px;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 7px;
+  font-size: 1vw;
+  border-radius: 5px;
+  cursor: hand;
+  font-family: Helvetica, serif;
+  left: 42.5%;
+  font-weight: 600;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.create-button:hover {
+  background-color: #FFD185;
+  color: ghostwhite;
+  border: solid #FFD1B7;
+}
+
+.background{
+  background-image: url("../../assets/image/background.jpg");
+  background-size: cover;
+
+  position: fixed;
+  padding: 0;
+  margin: auto;
+
+  top: 60px;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.shadow-background{
+  background-color: rgba(52,63, 75, 0.5);
+  border-radius: 25px;
+  width: 50vw;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.shadow-background h2 {
+  color: white;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.eatgroup-create-text{
+  color: white;
+  position: relative;
+  left: 2vw;
+  padding-top: 8vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  width: 40%;
+  padding-bottom: 8vh;
+}
+
+.eatgroup-create-text h2 {
+  font-weight: 400;
+  font-size: 2vw;
+}
+
+.eatgroup-create-text p {
+  font-size: 1vw;
+}
+
+.big-logo {
+  float: right;
+  display: block;
+  margin-right: -110%;
+  width: 16vw;
+  margin-top: -16vw;
+}

@@ -1,0 +1,14 @@
+<div class="background">
+  <div class="shadow-background">
+    <div class="eatgroup-list-text">
+      <h2>My EatGroups</h2>
+
+<!--      <button routerLink="/eatgroup-create" class="list-button">Create EatGroup</button>-->
+
+      <li *ngFor="let eatGroup of eatgroups">
+        <div>{{ eatGroup.name }}</div>
+      </li>
+
+    </div>
+  </div>
+</div>
