@@ -14,12 +14,12 @@ export class EatgroupService {
   }
 
   public getAll(): Observable<Eatgroup[]> {
-    return this.http.get<Eatgroup[]>("//localhost:8080/eatGroups");
+    return this.http.get<Eatgroup[]>("//localhost:8080/eat_groups/all");
   }
 
-  public createEatGroup(eatgroupname){
-    let body = JSON.stringify(eatgroupname);
-    return this.http.post('//localhost:8080/eatGroups/', body, this.httpOptions);
-
-  }
+  // public createEatGroup(eatgroupname){
+  //   let body = JSON.stringify(eatgroupname);
+  //   return this.http.post('//localhost:8080/eatGroups/', body, this.httpOptions);
+  //
+  // }
 }

@@ -8,7 +8,10 @@
 
 .form-control-name {
   margin-top: 7px;
-
+  height: 20px;
+  width: 100%;
+  border-radius: 7px;
+  cursor: hand;
 }
 
 .create-button {
@@ -41,14 +44,11 @@
 .background{
   background-image: url("../../assets/image/background.jpg");
   background-size: cover;
-
   position: fixed;
   padding: 0;
   margin: auto;
-
   top: 60px;
   left:0;
-
   width: 100%;
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

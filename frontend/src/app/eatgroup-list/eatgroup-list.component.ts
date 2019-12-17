@@ -13,8 +13,11 @@ export class EatgroupListComponent implements OnInit {
 
   ngOnInit() {
     this.eatgroupService.getAll().subscribe((data:{}) => {
-        this.eatgroups = data;
+      console.log("EatGroups", data);
+      this.eatgroups = data;
       }
     );
   }
 }
+
+
