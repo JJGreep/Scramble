@@ -1,0 +1,15 @@
+<div>
+  <li *ngFor="let Restaurant of Restaurants">
+    <div class='reslist card'>
+      <div class="imgdiv">
+        <img class="featimg" src="{{Restaurant.photo_url}}">
+      </div>
+      <div class="txtdiv">
+        <p class="restext">Name: {{Restaurant.name}}</p>
+        <p class="restext">Id: {{Restaurant.id}} </p>
+        <p class="restext">Cuisines: {{Restaurant.cuisines}} </p>
+      </div>
+    </div>
+    <div class="emptyspace"></div>
+  </li>
+</div>

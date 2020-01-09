@@ -10,6 +10,12 @@ import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
 import { GroupsComponent } from './groups/groups.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
+import { RestaurantlistComponent } from './restaurantlist/restaurantlist.component';
+import {HttpClientModule} from "@angular/common/http";
+import { FiltersComponent } from './filters/filters.component';
+import { RestaurantlistpageComponent } from './restaurantlistpage/restaurantlistpage.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +26,16 @@ import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail
     RegisterComponent,
     FindRestaurantComponent,
     GroupsComponent,
-    RestaurantDetailComponent
+    RestaurantDetailComponent,
+    RestaurantComponent,
+    RestaurantlistComponent,
+    FiltersComponent,
+    RestaurantlistpageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+.filterdiv{
+  height: 98%;
+  background-color:blue;
+  position: fixed;
+  width: 25%;
+  float:left;
+  margin-bottom: 99%;
+  margin-top: 1%;
+  z-index: 4;
+}
