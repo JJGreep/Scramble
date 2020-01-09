@@ -11,6 +11,14 @@ import { FindRestaurantComponent } from './find-restaurant/find-restaurant.compo
 import { GroupsComponent } from './groups/groups.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 
+// used to create fake backend
+import { fakeBackendProvider } from './_helpers/fake-backend';
+
+import { ErrorInterceptor } from './_helpers/error.interceptor';
+import { JwtInterceptor } from './_helpers/jwt.interceptor'
+import { AlertComponent } from './_components/alert.component';
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +28,20 @@ import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail
     RegisterComponent,
     FindRestaurantComponent,
     GroupsComponent,
-    RestaurantDetailComponent
+    RestaurantDetailComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+
+    fakeBackendProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
