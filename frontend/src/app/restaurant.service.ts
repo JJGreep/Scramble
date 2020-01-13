@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import {Observable, throwError, of} from "rxjs";
-import { MockRestaurant} from "./mockRestaurant";
-import { RESTAURANTS} from "./mock-restaurant";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Restaurant} from "./restaurant";
 import {catchError, retry, } from "rxjs/operators";
@@ -23,13 +21,6 @@ export class RestaurantService {
 
   public getFilteredRestaurants(filter: Filter): Observable<Restaurant[]>{
     return this.httpClient.get<Restaurant[]>(this.apiURL + "/" + filter.cityId + "/" + filter.cuisines + "/" + filter.radius)
-  }
-  getMockedRestaurants(): Observable<MockRestaurant[]> {
-    return of(RESTAURANTS);
-  }
-
-  getMockedRestaurant(id: number): Observable<MockRestaurant> {
-    return of(RESTAURANTS.find( restaurant => restaurant.id === id));
   }
 
   handleError(error) {

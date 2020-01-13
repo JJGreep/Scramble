@@ -1,6 +1,7 @@
 .parent{
   overflow: hidden;
   height: auto;
+  background-image: url("../../assets/image/background.jpg"); ;
 }
 .child1{
   float: left;
@@ -10,3 +11,4 @@
 .child2{
   clear: right;
 }
+

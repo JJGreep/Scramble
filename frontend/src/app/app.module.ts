@@ -13,10 +13,11 @@ import { FindRestaurantComponent } from './find-restaurant/find-restaurant.compo
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantlistComponent } from './restaurantlist/restaurantlist.component';
-import {HttpClientModule} from "@angular/common/http";
 import { FiltersComponent } from './filters/filters.component';
 import { RestaurantlistpageComponent } from './restaurantlistpage/restaurantlistpage.component';
 import {FormsModule} from "@angular/forms";
+import {EatgroupListComponent} from "./eatgroup-list/eatgroup-list.component";
+import {EatgroupCreateComponent} from "./eatgroup-create/eatgroup-create.component";
 
 
 @NgModule({
@@ -27,16 +28,16 @@ import {FormsModule} from "@angular/forms";
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
-    RestaurantDetailComponent
     RestaurantDetailComponent,
     RestaurantComponent,
     RestaurantlistComponent,
     FiltersComponent,
-    RestaurantlistpageComponent
+    RestaurantlistpageComponent,
+    EatgroupListComponent,
+    EatgroupCreateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

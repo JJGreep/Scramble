@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'find-restaurant', component: FindRestaurantComponent},
   {path: 'eatgroup-list', component: EatgroupListComponent},
-  {path: 'eatgroup-create', component: EatgroupCreateComponent}
+  {path: 'eatgroup-create', component: EatgroupCreateComponent},
   {path: 'restaurants', component: RestaurantlistpageComponent}
 ];
 
