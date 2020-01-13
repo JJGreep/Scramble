@@ -1,0 +1,12 @@
+.parent{
+  overflow: hidden;
+  height: auto;
+}
+.child1{
+  float: left;
+  margin-bottom: 100%;
+}
+
+.child2{
+  clear: right;
+}

@@ -10,9 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
-import { EatgroupListComponent } from './eatgroup-list/eatgroup-list.component';
-import { EatgroupCreateComponent } from './eatgroup-create/eatgroup-create.component';
-import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,15 +20,12 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
-    RestaurantDetailComponent,
-    EatgroupListComponent,
-    EatgroupCreateComponent
+    GroupsComponent,
+    RestaurantDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
