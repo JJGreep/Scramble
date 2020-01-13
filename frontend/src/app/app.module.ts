@@ -15,6 +15,8 @@ import { RestaurantlistComponent } from './restaurantlist/restaurantlist.compone
 import {HttpClientModule} from "@angular/common/http";
 import { FiltersComponent } from './filters/filters.component';
 import { RestaurantlistpageComponent } from './restaurantlistpage/restaurantlistpage.component';
+import {FormsModule} from "@angular/forms";
+import {MatSliderModule} from "@angular/material/slider";
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { RestaurantlistpageComponent } from './restaurantlistpage/restaurantlist
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

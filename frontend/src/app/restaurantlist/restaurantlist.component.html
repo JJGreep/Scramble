@@ -1,4 +1,5 @@
-<div>
+<div *ngIf="!Restaurants">Geen restauranten</div>
+<div *ngIf="Restaurants">
   <li *ngFor="let Restaurant of Restaurants">
     <div class='reslist card'>
       <div class="imgdiv">

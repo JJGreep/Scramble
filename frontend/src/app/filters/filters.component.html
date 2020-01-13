@@ -1,3 +1,25 @@
+
 <div class="filterdiv">
-  <button> Refresh </button>
+  <div class="checks">
+    <h3>Filters</h3>
+    <li *ngFor="let filterCheck of filterChecks">
+      <input type="checkbox" [(ngModel)]="filterCheck.checked" (change)="!filterCheck.checked" >
+      {{filterCheck.cuisine}}
+      <br>
+    </li>
+  </div>
+  <br>
+  <div class="slider">
+    <form #sliderForm="ngForm">
+      <div class="form-group">
+
+        <H4>In what radius do you want to search?</H4>
+        <br/> <br/> <br/>
+        0 <input type="range" min="0" max="20"  class="form-control" id='slider' [(ngModel)]="sliderValue" name="slider" required #slider="ngModel"> 20
+        <br/> <br/> <br/>
+        <input type="number" id="name" name="name" class="form-control slidertext" min="0" max="20" required [(ngModel)]="sliderValue" #slider="ngModel"> km
+      </div>
+    </form>
+  </div>
+  <br>
 </div>

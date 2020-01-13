@@ -5,6 +5,7 @@ import { RESTAURANTS} from "./mock-restaurant";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Restaurant} from "./restaurant";
 import {catchError, retry, } from "rxjs/operators";
+import {Filter} from './Filter'
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +21,9 @@ export class RestaurantService {
 
   }
 
+  public getFilteredRestaurants(filter: Filter): Observable<Restaurant[]>{
+    return this.httpClient.get<Restaurant[]>(this.apiURL + "/" + filter.cityId + "/" + filter.cuisines + "/" + filter.radius)
+  }
   getMockedRestaurants(): Observable<MockRestaurant[]> {
     return of(RESTAURANTS);
   }

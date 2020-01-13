@@ -14,7 +14,9 @@ export class RestaurantlistComponent implements OnInit {
   constructor( public restaurantService: RestaurantService) { }
 
   ngOnInit() {
+      console.log("reslist loaded")
       this.loadRestaurants();
+
   }
 
   public checkImg(restaurants: Restaurant[]) {
