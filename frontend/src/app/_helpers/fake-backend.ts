@@ -4,7 +4,7 @@ import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
 // array in local storage for registered users
-let users = JSON.parse(localStorage.getItem('users')) || [];
+let accounts = JSON.parse(localStorage.getItem('accounts')) || [];
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
@@ -20,14 +20,14 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
     function handleRoute() {
       switch (true) {
-        case url.endsWith('/users/authenticate') && method === 'POST':
+        case url.endsWith('/accounts/authenticate') && method === 'POST':
           return authenticate();
-        case url.endsWith('/users/register') && method === 'POST':
+        case url.endsWith('/accounts/register') && method === 'POST':
           return register();
-        case url.endsWith('/users') && method === 'GET':
-          return getUsers();
-        case url.match(/\/users\/\d+$/) && method === 'DELETE':
-          return deleteUser();
+        case url.endsWith('/accounts') && method === 'GET':
+          return getAccounts();
+        case url.match(/\/accounts\/\d+$/) && method === 'DELETE':
+          return deleteAccount();
         default:
           // pass through any requests not handled above
           return next.handle(request);
@@ -38,41 +38,41 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
     function authenticate() {
       const { username, password } = body;
-      const user = users.find(x => x.username === username && x.password === password);
-      if (!user) return error('Username or password is incorrect');
+      const account = accounts.find(x => x.username === username && x.password === password);
+      if (!account) return error('Username or password is incorrect');
       return ok({
-        id: user.id,
-        username: user.username,
-        firstName: user.firstName,
-        lastName: user.lastName,
+        id: account.id,
+        username: account.username,
+        firstName: account.firstName,
+        lastName: account.lastName,
         token: 'fake-jwt-token'
       })
     }
 
     function register() {
-      const user = body
+      const account = body
 
-      if (users.find(x => x.username === user.username)) {
-        return error('Username "' + user.username + '" is already taken')
+      if (accounts.find(x => x.username === account.username)) {
+        return error('Username "' + account.username + '" is already taken')
       }
 
-      user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
-      users.push(user);
-      localStorage.setItem('users', JSON.stringify(users));
+      account.id = accounts.length ? Math.max(...accounts.map(x => x.id)) + 1 : 1;
+      accounts.push(account);
+      localStorage.setItem('accounts', JSON.stringify(accounts));
 
       return ok();
     }
 
-    function getUsers() {
+    function getAccounts() {
       if (!isLoggedIn()) return unauthorized();
-      return ok(users);
+      return ok(accounts);
     }
 
-    function deleteUser() {
+    function deleteAccount() {
       if (!isLoggedIn()) return unauthorized();
 
-      users = users.filter(x => x.id !== idFromUrl());
-      localStorage.setItem('users', JSON.stringify(users));
+      accounts = accounts.filter(x => x.id !== idFromUrl());
+      localStorage.setItem('accounts', JSON.stringify(accounts));
       return ok();
     }
 

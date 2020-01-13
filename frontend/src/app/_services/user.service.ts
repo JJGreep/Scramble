@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {config} from "rxjs";
 
 import { Account } from '../_models/account';
 
