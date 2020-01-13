@@ -4,8 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
-import { GroupsComponent } from './groups/groups.component';
-import {RestaurantlistComponent} from "./restaurantlist/restaurantlist.component";
 import {RestaurantlistpageComponent} from "./restaurantlistpage/restaurantlistpage.component";
 
 
@@ -15,7 +13,6 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'find-restaurant', component: FindRestaurantComponent},
-  {path: 'groups', component: GroupsComponent},
   {path: 'restaurants', component: RestaurantlistpageComponent}
 ];
 

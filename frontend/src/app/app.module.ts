@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
-import { GroupsComponent } from './groups/groups.component';
+
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantlistComponent } from './restaurantlist/restaurantlist.component';
@@ -16,7 +16,6 @@ import {HttpClientModule} from "@angular/common/http";
 import { FiltersComponent } from './filters/filters.component';
 import { RestaurantlistpageComponent } from './restaurantlistpage/restaurantlistpage.component';
 import {FormsModule} from "@angular/forms";
-import {MatSliderModule} from "@angular/material/slider";
 
 
 @NgModule({
@@ -27,7 +26,6 @@ import {MatSliderModule} from "@angular/material/slider";
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
-    GroupsComponent,
     RestaurantDetailComponent,
     RestaurantComponent,
     RestaurantlistComponent,
@@ -39,7 +37,6 @@ import {MatSliderModule} from "@angular/material/slider";
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
