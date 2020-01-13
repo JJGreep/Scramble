@@ -20,7 +20,6 @@ import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail
     LoginComponent,
     RegisterComponent,
     FindRestaurantComponent,
-    GroupsComponent,
     RestaurantDetailComponent
   ],
   imports: [

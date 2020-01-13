@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Scramble.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Scramble.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Filter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/FilterCheck.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/res-restaurants.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/res-restaurants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurant.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurant/restaurant.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurant/restaurant.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurant/restaurant.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurant/restaurant.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlistpage/restaurantlistpage.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlistpage/restaurantlistpage.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlistpage/restaurantlistpage.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlistpage/restaurantlistpage.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/image/noimg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/Mock-restaurant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/mock-restaurant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/Restaurant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/mockRestaurant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-list/eatgroup-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-list/eatgroup-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-list/eatgroup-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-list/eatgroup-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/find-restaurant/find-restaurant.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/register/register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurant.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurant.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +78,18 @@
       <recent name="$PROJECT_DIR$/frontend/src/app" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="E2E Tests (frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" />
@@ -71,18 +113,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
