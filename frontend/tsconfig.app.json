@@ -11,8 +11,14 @@
   "include": [
     "src/**/*.ts"
   ],
+  "scripts": [
+    "src/assets/js/snippets.js"
+  ],
   "exclude": [
     "src/test.ts",
     "src/**/*.spec.ts"
   ]
 }
+
+
+
