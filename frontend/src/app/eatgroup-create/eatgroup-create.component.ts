@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {EatgroupService} from "../eatgroup.service";
-import {Eatgroup} from "../eatgroup";
 import {CreateEatgroup} from "../createEatgroup";
 
 @Component({
