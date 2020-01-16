@@ -10,7 +10,7 @@
   background-color: white;
   text-align: center;
   color: #47525E;
-  border-radius: 15px;
+  border-radius: 25px;
   position: fixed;
   margin: 8% 8%;
   width: 25%;
@@ -19,8 +19,9 @@
 }
 
 .filterdiv h2{
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5vw;
+  color: #FFD185;
 }
 .checks{
 }
