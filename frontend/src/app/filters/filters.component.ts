@@ -29,6 +29,8 @@ export class FiltersComponent implements OnInit {
 
   ngOnInit() {console.log("filter loaded")
   }
+
+
   onchange(value){
     const checkedFilters = this.filterChecks.filter(x => x.checked);
     this.selectedValues = checkedFilters.map(x => x.cuisineId);
