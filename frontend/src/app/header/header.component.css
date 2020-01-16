@@ -28,16 +28,16 @@
   }
 
   .header {
-    height: 10%;
+    height: 60px;
     display: flex;
     align-items: center;
     background-color: #ffffff;
     color: #47525E;
     font-weight: 600;
     width: 100%;
-    position: sticky;
-    top: 0px;
-    left: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 6;
   }
 
@@ -56,7 +56,7 @@
     outline: none !important;
   }
   .header .navbarbutton {
-    height: 40px;
+    height: 30px;
     padding: 15px;
     align-items: center;
     display: flex;
