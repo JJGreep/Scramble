@@ -12,7 +12,7 @@ import { FindRestaurantComponent } from './find-restaurant/find-restaurant.compo
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { EatgroupListComponent } from './eatgroup-list/eatgroup-list.component';
 import { EatgroupCreateComponent } from './eatgroup-create/eatgroup-create.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,13 @@ import { FormsModule } from '@angular/forms';
     EatgroupListComponent,
     EatgroupCreateComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

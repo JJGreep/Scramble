@@ -2,15 +2,18 @@
   <div class="shadow-background">
     <div class="eatgroup-create-text">
       <h2>Create your own EatGroup</h2><br>
-      <form (ngSubmit)="onSubmit()">
+      <form name="createEG" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <input [(ngModel)]="createeatgroup.name" class="form-control"
                  id="name"
                  name="name"
                  placeholder="Enter your EatGroup name"
                  type="text">
-        </div>
-        <button class="btn btn-primary" type="submit">Create EatGroup</button>
+         </div>
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >Create EatGroup</button>
       </form>
     </div>
   </div>
