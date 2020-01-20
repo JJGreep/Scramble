@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { FindRestaurantComponent } from './find-restaurant/find-restaurant.component';
 
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+<<<<<<< HEAD
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantlistComponent } from './restaurantlist/restaurantlist.component';
 import { FiltersComponent } from './filters/filters.component';
@@ -19,6 +20,11 @@ import {FormsModule} from "@angular/forms";
 import {EatgroupListComponent} from "./eatgroup-list/eatgroup-list.component";
 import {EatgroupCreateComponent} from "./eatgroup-create/eatgroup-create.component";
 
+=======
+import { EatgroupListComponent } from './eatgroup-list/eatgroup-list.component';
+import { EatgroupCreateComponent } from './eatgroup-create/eatgroup-create.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+>>>>>>> 49fea5f
 
 @NgModule({
   declarations: [
@@ -36,12 +42,13 @@ import {EatgroupCreateComponent} from "./eatgroup-create/eatgroup-create.compone
     EatgroupListComponent,
     EatgroupCreateComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
