@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:700);
+
+
 .background{
   background-image: url("../../assets/image/background.jpg");
   background-size: cover;
@@ -100,7 +103,7 @@
 
 }
 
-@import url(https://fonts.googleapis.com/css?family=Dosis:700);
+
 body {
   font-family: "Dosis", Helvetica, Arial, sans-serif;
   background: #ecf0f1;
