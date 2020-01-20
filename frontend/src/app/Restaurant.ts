@@ -1,11 +1,11 @@
 import {Location} from "./Location";
 
-export class MockRestaurant{
+export class Restaurant{
   id : number;
   name: string;
   location: Location;
   cuisines: string;
-  price_range: number;
+  pirce_range: number;
   // user_rating:
   photos_url: string;
   phone_numbers: string;
