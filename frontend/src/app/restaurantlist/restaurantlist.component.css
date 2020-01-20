@@ -19,7 +19,7 @@
   text-align: center;
   padding: 16px 0;
   border-radius: 25px;
-  /*background-color: white;*/
+  background-color: white;
 }
 
 .list-header-text h2{
@@ -59,7 +59,6 @@ li{
 .featimg{
   height: 150px;
   width: 150px;
-  padding: 1% 1% 1% 1%;
   border-radius: 25px;
 }
 

@@ -23,7 +23,8 @@
   font-size: 1.5vw;
   color: #FFD185;
 }
-.checks{
+.checks h2{
+  padding: 16px 0px;
 }
 .slider{
 }

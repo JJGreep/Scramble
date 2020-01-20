@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
