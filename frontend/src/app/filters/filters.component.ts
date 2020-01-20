@@ -10,7 +10,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class FiltersComponent implements OnInit {
   @Input() filterChecks: FilterCheck[] = [
-     new FilterCheck(false,"Italian", 0),
+     new FilterCheck(false,"Italian", 0), //55
      new FilterCheck(false,"Vegan", 1),
      new FilterCheck(false,"Halal", 2),
      new FilterCheck(false,"Seafood", 3),

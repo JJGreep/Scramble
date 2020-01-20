@@ -65,4 +65,5 @@ export class Restaurant {
   set photo_url(value: String) {
     this._photo_url = value;
   }
+
 }

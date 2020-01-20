@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurant.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlistpage/restaurantlistpage.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlistpage/restaurantlistpage.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scramble-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -116,7 +118,8 @@
       <workItem from="1576511593655" duration="1077000" />
       <workItem from="1578997052735" duration="14050000" />
       <workItem from="1579173494071" duration="284000" />
-      <workItem from="1579173997664" duration="6619000" />
+      <workItem from="1579173997664" duration="7815000" />
+      <workItem from="1579521330529" duration="2135000" />
     </task>
     <servers />
   </component>
@@ -160,10 +163,10 @@
       <screen x="0" y="23" width="1920" height="1137" />
     </state>
     <state x="531" y="196" key="CommitChangelistDialog2/1920.365.1920.1177/-1680.23.1680.1027/0.23.1920.1137@0.23.1920.1137" timestamp="1576424665096" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1575369225588">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1579521393230">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575369225588" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579521393230" />
     <state width="1878" height="197" key="GridCell.Tab.0.bottom" timestamp="1576512696110">
       <screen x="0" y="23" width="1920" height="1137" />
     </state>
@@ -236,13 +239,14 @@
       <screen x="0" y="23" width="1920" height="1137" />
     </state>
     <state width="918" height="389" key="GridCell.Tab.3.right/0.23.1920.1137@0.23.1920.1137" timestamp="1576509476763" />
-    <state x="470" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575464525649">
+    <state x="470" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1579521384520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="470" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575464525649" />
-    <state x="640" y="234" width="639" height="714" key="find.popup" timestamp="1576433258175">
-      <screen x="0" y="23" width="1920" height="1137" />
+    <state x="470" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579521384520" />
+    <state x="512" y="153" width="611" height="536" key="find.popup" timestamp="1579521871547">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="512" y="153" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1579521871547" />
     <state x="640" y="234" width="639" height="714" key="find.popup/1920.365.1920.1177/-1680.23.1680.1027/0.23.1920.1137@0.23.1920.1137" timestamp="1576433258175" />
   </component>
 </project>
