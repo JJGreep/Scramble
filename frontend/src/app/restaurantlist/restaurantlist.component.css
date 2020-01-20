@@ -63,7 +63,7 @@ li{
 }
 
 .txtdiv{
- float: right;
+  float: right;
   position: relative;
   bottom: 150px;
   right: 20px;
