@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +127,10 @@
       <workItem from="1579115481341" duration="4844000" />
       <workItem from="1579186803289" duration="218000" />
       <workItem from="1579455651525" duration="6756000" />
+      <workItem from="1578997052735" duration="14050000" />
+      <workItem from="1579173494071" duration="284000" />
+      <workItem from="1579173997664" duration="7815000" />
+      <workItem from="1579521330529" duration="2135000" />
     </task>
     <servers />
   </component>
