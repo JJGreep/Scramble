@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26cba534-eb2f-43d4-beca-d44e43191b29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/filters/filters.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/eatgroup-create/eatgroup-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/restaurantlist/restaurantlist.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +55,12 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/assets/image" />
       <recent name="$PROJECT_DIR$/frontend/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/app" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -182,10 +176,10 @@
       <screen x="0" y="23" width="1920" height="1137" />
     </state>
     <state x="531" y="196" key="CommitChangelistDialog2/1920.365.1920.1177/-1680.23.1680.1027/0.23.1920.1137@0.23.1920.1137" timestamp="1576424665096" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1579521393230">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1579614068891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575369225588" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579614068891" />
     <state width="1776" height="352" key="GridCell.Tab.0.bottom" timestamp="1579466376122">
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
