@@ -7,7 +7,7 @@
   <div *ngIf="Restaurants" class="restaurant-list">
     <li *ngFor="let Restaurant of Restaurants">
       <div class='reslist card'>
-        <a [attr.href]="Restaurant.url">
+        <a class="dtl" [attr.href]="Restaurant.url">
         <div class="imgdiv" >
 
           <img class="featimg" src="{{Restaurant.photo_url}}">
