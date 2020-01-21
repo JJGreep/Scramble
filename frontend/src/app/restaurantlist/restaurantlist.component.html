@@ -7,17 +7,19 @@
   <div *ngIf="Restaurants" class="restaurant-list">
     <li *ngFor="let Restaurant of Restaurants">
       <div class='reslist card'>
-        <div class="imgdiv">
+        <a [attr.href]="Restaurant.url">
+        <div class="imgdiv" >
+
           <img class="featimg" src="{{Restaurant.photo_url}}">
+
         </div>
         <div class="spacer"></div>
         <div class="txtdiv">
           <h2 class="restext">{{Restaurant.name}}</h2>
-  <!--        <p class="restext">Id: {{Restaurant.id}} </p>-->
           <p class="restext">Cuisines: {{Restaurant.cuisines}} </p>
           <p class="restext">Price Range: {{Restaurant.price_range}} </p>
-          <!--<md-button ng-href="{{googleUrl}}" target="_self">Go to Google</md-button>-->
         </div>
+        </a>
       </div>
     </li>
   </div>
