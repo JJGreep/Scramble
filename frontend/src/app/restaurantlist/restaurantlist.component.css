@@ -45,6 +45,9 @@
   height: 150px !important;
 }
 
+.restaurant-list .reslist:hover{
+  background-color: rgba(0 , 0, 0, 0.5);
+}
 
 .restext{
   color: white;
@@ -74,7 +77,4 @@ li{
 .imgdiv{
   display: inline-block;
   margin: auto;
-}
-.dtl:hover {
-  opacity: 0.7;
 }

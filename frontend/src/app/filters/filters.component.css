@@ -50,7 +50,7 @@
   width: 25px;
   height: 25px;
   background: #FFD185;
-  cursor: pointer;
+  cursor: grab;
 }
 
 .slider::-moz-range-thumb {
@@ -61,11 +61,12 @@
 }
 
 .form-control{
-  margin-top: 5%;
+  margin: 20px 0;
   border: 0;
   box-shadow: none;
   caret-shape: block;
 }
+
 .slidertext{
 }
 
