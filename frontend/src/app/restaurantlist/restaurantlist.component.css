@@ -19,14 +19,14 @@
   text-align: center;
   padding: 16px 0;
   border-radius: 25px;
-  background-color: white;
+  text-shadow: 2.5px 1px black;
 }
 
 .list-header-text h2{
-  color: #FFD185;
+  color: white;
   font-weight: 600;
   font-size: 1.5vw;
-  text-shadow: 1px 1px #000
+  /*text-shadow: 1px 1px #000*/
 }
 
 .restaurant-list{
@@ -45,6 +45,9 @@
   height: 150px !important;
 }
 
+.restaurant-list .reslist:hover{
+  background-color: rgba(0 , 0, 0, 0.5);
+}
 
 .restext{
   color: white;
@@ -63,7 +66,7 @@ li{
 }
 
 .txtdiv{
-  float: right;
+ float: right;
   position: relative;
   bottom: 150px;
   right: 20px;

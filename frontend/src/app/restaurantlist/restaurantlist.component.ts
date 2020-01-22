@@ -27,10 +27,20 @@ export class RestaurantlistComponent implements OnInit {
       }
     }
   }
+
+  public checkUrl(restaurants: Restaurant[]) {
+    for (let restaurant of restaurants) {
+      if (restaurant.url == ""){
+        restaurant.url = "http://www.nu.nl";
+      }
+    }
+  }
+
   public loadRestaurants() {
     return this.restaurantService.getRestaurants().subscribe((data: {}) => {
       this.Restaurants = data;
       this.checkImg(this.Restaurants);
+      this.checkUrl(this.Restaurants);
     })
   }
 }

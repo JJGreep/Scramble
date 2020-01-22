@@ -20,11 +20,11 @@
 
 .filterdiv h2{
   font-weight: 600;
+  padding: 16px 0;
   font-size: 1.5vw;
   color: #FFD185;
 }
-.checks h2{
-  padding: 16px 0px;
+.checks{
 }
 
 .filter-text input{
@@ -36,12 +36,46 @@
   text-align: right;
 }
 .slider{
+  margin-top: -3%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  height: 3px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 100%;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #FFD185;
+  cursor: grab;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
 .form-control{
+  margin: 20px 0;
   border: 0;
   box-shadow: none;
   caret-shape: block;
 }
+
 .slidertext{
 }
 
