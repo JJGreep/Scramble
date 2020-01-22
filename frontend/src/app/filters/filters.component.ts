@@ -2,6 +2,8 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FilterCheck} from "../FilterCheck";
 import {Filter} from "../Filter";
 import { FormGroup, FormControl } from '@angular/forms';
+import {CuisineService} from "../cuisine.service";
+import {Cuisine} from "../cuisine"
 
 @Component({
   selector: 'app-filters',
@@ -17,6 +19,8 @@ export class FiltersComponent implements OnInit {
      new FilterCheck(false,"Chinese", 4),
      new FilterCheck(false,"Sushi", 5)
    ];
+
+
   form: FormGroup = new FormGroup({
     checks: new FormControl(null)
   });
@@ -25,9 +29,12 @@ export class FiltersComponent implements OnInit {
   @Input() selectedValues: number[];
   @Output() toggle = new EventEmitter<any[]>();
 
-  constructor() { }
+  @Input()
+  Cuisines: Cuisine[] = [];
+  constructor(public cuisineService: CuisineService) { }
 
   ngOnInit() {console.log("filter loaded")
+    this.loadCuisines();
   }
 
 
@@ -36,5 +43,11 @@ export class FiltersComponent implements OnInit {
     this.selectedValues = checkedFilters.map(x => x.cuisineId);
 
     this.toggle.emit(checkedFilters.map(x => x.cuisineId));
+  }
+
+  public loadCuisines(){
+    return this.cuisineService.getCuisines().subscribe((data:Cuisine[])=>{
+      this.Cuisines = data;
+    })
   }
 }

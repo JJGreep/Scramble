@@ -26,6 +26,15 @@
 }
 .checks{
 }
+
+.filter-text input{
+  text-align: left;
+}
+.filter-text p{
+  margin-top: -24px;
+  margin-left: 50px;
+  text-align: right;
+}
 .slider{
   margin-top: -3%;
   -webkit-appearance: none;

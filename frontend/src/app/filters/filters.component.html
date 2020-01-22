@@ -1,22 +1,46 @@
-
 <div class="filterdiv">
   <div class="checks">
-    <h2>I feel like eating...</h2>
-    <li *ngFor="let filterCheck of filterChecks">
-      <input type="checkbox" [(ngModel)]="filterCheck.checked" (change)="!filterCheck.checked" >
-      {{filterCheck.cuisine}}
-      <br>
-    </li>
+    <h2>I don't feel like eating...</h2>
+    <div class="filter-text">
+      <li *ngFor="let Cuisine of Cuisines | slice: 0:5">
+        <input type="checkbox" />
+        <p>{{ Cuisine.cuisine_name }}</p>
+
+        <br />
+      </li>
+    </div>
   </div>
   <div class="slider-container">
     <form #sliderForm="ngForm">
       <div class="form-group">
-
         <h2>Maximum Distance</h2>
         <div class="slider_holder">
-          1 <input type="range" min="1" max="20"  class="slider" id="distance" [(ngModel)]="sliderValue" name="slider" required #slider="ngModel"> 20
+          1
+          <input
+            type="range"
+            min="1"
+            max="20"
+            class="slider"
+            id="distance"
+            [(ngModel)]="sliderValue"
+            name="slider"
+            required
+            #slider="ngModel"
+          />
+          20
         </div>
-        <input type="number" id="name" name="name" class="form-control slidertext" min="1" max="20" required [(ngModel)]="sliderValue" #slider="ngModel"> km
+        <input
+          type="number"
+          id="name"
+          name="name"
+          class="form-control slidertext"
+          min="1"
+          max="20"
+          required
+          [(ngModel)]="sliderValue"
+          #slider="ngModel"
+        />
+        km
       </div>
     </form>
   </div>
