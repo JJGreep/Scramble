@@ -26,6 +26,15 @@
 .checks h2{
   padding: 16px 0px;
 }
+
+.filter-text input{
+  text-align: left;
+}
+.filter-text p{
+  margin-top: -24px;
+  margin-left: 50px;
+  text-align: right;
+}
 .slider{
 }
 .form-control{
