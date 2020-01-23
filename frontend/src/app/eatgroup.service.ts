@@ -3,14 +3,13 @@ import { HttpClient} from "@angular/common/http";
 import { Observable} from "rxjs";
 import {Eatgroup} from "./eatgroup";
 import {CreateEatgroup} from "./createEatgroup";
+import {UpdateEatgroup} from "./updateEatgroup";
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class EatgroupService {
-  private httpOptions: any;
-
   constructor(private http: HttpClient) {
   }
 
@@ -18,9 +17,12 @@ export class EatgroupService {
     return this.http.get<Eatgroup[]>("//localhost:8080/eat_groups/all?name=");
   }
 
-public createEatGroup(createEatgroup: CreateEatgroup) {
+  public createEatGroup(createEatgroup: CreateEatgroup) {
     return this.http.post<Eatgroup>("//localhost:8080/eat_groups/createGroup", createEatgroup);
-}
+  }
 
+  public updateEatGroup(updateEatgroup: UpdateEatgroup) {
+    return this.http.put<Eatgroup>("//localhost:8080/eat_groups/updateGroup", updateEatgroup);
+  }
 
 }

@@ -2,20 +2,17 @@
 
 <div class="background">
   <div class="shadow-background">
-    <div class="eatgroup-create-text">
-      <h2><i class="fas fa-plus"></i> Create your own EatGroup</h2><br>
-      <form name="createEG" (ngSubmit)="onSubmit()">
+    <div class="eatgroup-update-text">
+      <h2><i class="far fa-edit"></i> Modify EatGroup</h2><br>
+      <form name="updateEG" (ngSubmit)="onSubmit()">
         <div class="form-group">
-          <input [(ngModel)]="createeatgroup.name" class="form-control"
+          <input [(ngModel)]="updateeatgroup.name" class="form-control"
                  id="name"
                  name="name"
-                 placeholder="Enter your EatGroup name"
+                 placeholder="Modify your EatGroup name"
                  type="text">
-         </div>
-        <button
-          class="btn btn-primary"
-          type="submit"
-        >Create EatGroup</button>
+        </div>
+        <button class="btn btn-primary" type="submit">Modify EatGroup</button>
       </form>
     </div>
   </div>
