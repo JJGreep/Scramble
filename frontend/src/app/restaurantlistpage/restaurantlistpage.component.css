@@ -1,6 +1,7 @@
 .parent{
   overflow: hidden;
-  background-image: url("../../assets/image/background.jpg"); ;
+
+  background: url("../../assets/image/background.jpg") no-repeat rgb(30,30,30) fixed center center;
   background-size: cover;
   top: 0px;
   left: 0;
