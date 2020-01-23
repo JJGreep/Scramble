@@ -81,17 +81,17 @@
 }
 
 .form-control{
+  padding: 3% 3%;
+  width: 10%;
   margin: 20px 0;
-  border: 0;
-  box-shadow: none;
-  caret-shape: block;
+  border-radius: 5px;
+  border: 1px inset #d3d3d3;
 }
 
 .slidertext{
 }
 
 .ng-valid[required]{
-  border: none;
 }
 
 li{
