@@ -3,10 +3,7 @@
     <h2>I don't feel like eating...</h2>
     <div class="filter-text">
       <li *ngFor="let Cuisine of Cuisines | slice: 0:5">
-        <input type="checkbox" />
-        <p>{{ Cuisine.cuisine_name }}</p>
-
-        <br />
+        <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
       </li>
     </div>
   </div>
