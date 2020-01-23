@@ -3,17 +3,17 @@ export class Restaurant {
   private _name: String;
   private _url: String;
   private _cuisines: String;
-  private _price_range: Number;
+  private _average_cost_for_two: Number;
   public _photo_url: String;
 
   constructor()
 
-  constructor(id?:String, name?:String, url?:String, cuisines?:String, price_range?:Number, photo_url?:String){
+  constructor(id?:String, name?:String, url?:String, cuisines?:String, average_cost_for_two?:Number, photo_url?:String){
     this._id = id;
     this._name = name;
     this._url = url;
     this._cuisines = cuisines;
-    this._price_range = price_range;
+    this._average_cost_for_two = average_cost_for_two;
     this._photo_url = photo_url;
   }
 
@@ -50,12 +50,12 @@ export class Restaurant {
     this._cuisines = value;
   }
 
-  get price_range(): Number {
-    return this._price_range;
+  get average_cost_for_two(): Number {
+    return this._average_cost_for_two;
   }
 
-  set price_range(value: Number) {
-    this._price_range = value;
+  set average_cost_for_two(value: Number) {
+    this._average_cost_for_two = value;
   }
 
   get photo_url(): String {
