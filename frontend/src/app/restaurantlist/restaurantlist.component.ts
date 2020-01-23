@@ -31,7 +31,7 @@ export class RestaurantlistComponent implements OnInit {
   public checkUrl(restaurants: Restaurant[]) {
     for (let restaurant of restaurants) {
       if (restaurant.url == ""){
-        restaurant.url = "http://www.nu.nl";
+        restaurant.url = "https://www.zomato.com";
       }
     }
   }

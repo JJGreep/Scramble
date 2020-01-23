@@ -2,9 +2,16 @@
   <div class="checks">
     <h2>I don't feel like eating...</h2>
     <div class="filter-text">
-      <li *ngFor="let Cuisine of Cuisines | slice: 0:5">
-        <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
-      </li>
+      <div class="first-half-cuisines">
+        <li *ngFor="let Cuisine of Cuisines | slice: 0: Cuisines.length / 2">
+          <input type="radio" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
+        </li>
+      </div>
+      <div class="second-half-cuisines">
+        <li *ngFor="let Cuisine of Cuisines | slice: Cuisines.length / 2: Cuisines.length">
+          <input type="radio" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
+        </li>
+      </div>
     </div>
   </div>
   <div class="slider-container">

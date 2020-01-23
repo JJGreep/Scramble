@@ -8,7 +8,6 @@
 
 .filterdiv{
   background-color: white;
-  text-align: center;
   color: #47525E;
   border-radius: 25px;
   position: fixed;
@@ -23,12 +22,28 @@
   padding: 16px 0;
   font-size: 1.5vw;
   color: #FFD185;
+  text-align: center;
 }
 .checks{
 }
 
 .filter-text input{
   margin-bottom: 2%;
+}
+
+.filter-text .first-half-cuisines{
+  float: left;
+  margin-left: 20%;
+  max-width: 35%;
+}
+
+.filter-text .second-half-cuisines{
+  margin-left: 50%;
+  max-width: 35%;
+}
+
+.slider-container{
+  text-align: center;
 }
 .slider{
   margin-top: -3%;
@@ -41,6 +56,7 @@
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+
 }
 
 .slider:hover {
