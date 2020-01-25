@@ -1,11 +1,27 @@
 export class UpdateEatgroup {
-  public name: string;
-  public id: string;
+  private _name: string;
+  private _id: number;
 
   constructor()
 
-  constructor(id?: string) {
-    this.id = id;
+  constructor(id?: number, name?: string) {
+    this._id = id;
+    this._name = name;
   }
 
+  get name(): string {
+    return this._name;
+  }
+
+  set name(value: string) {
+    this._name = value;
+  }
+
+  get id(): number {
+    return this._id;
+  }
+
+  set id(value: number) {
+    this._id = value;
+  }
 }

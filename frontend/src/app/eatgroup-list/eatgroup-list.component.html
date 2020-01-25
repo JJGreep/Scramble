@@ -14,7 +14,7 @@
         <tr *ngFor="let eatGroup of eatgroups">
 
 <!--      If this group is made by you, you should get an edit button.-->
-          <td><a href="/eatgroup-update"><i class="far fa-edit"></i></a></td>
+          <td><a href="/eatgroup-update"><i class="far fa-edit"></i>{{ eatGroup.id }}</a></td>
 
           <td>{{ eatGroup.name }}</td>
 

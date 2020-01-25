@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { Observable} from "rxjs";
 import {Eatgroup} from "./eatgroup";
 import {CreateEatgroup} from "./createEatgroup";
@@ -22,7 +22,7 @@ export class EatgroupService {
   }
 
   public updateEatGroup(updateEatgroup: UpdateEatgroup) {
-    return this.http.put<Eatgroup>("//localhost:8080/eat_groups/updateGroup", updateEatgroup);
+    return this.http.post<Eatgroup>("//localhost:8080/eat_groups/updateGroup", updateEatgroup);
   }
 
 }
