@@ -2,15 +2,16 @@
 
 <div class="background">
   <div class="shadow-background">
-    <div class="eatgroup-update-text">
+    <div class="eatgroup-delete-text">
       <h2><i class="far fa-edit"></i> Modify EatGroup</h2><br>
       <form name="updateEG" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <input [(ngModel)]="updateeatgroup.name" class="form-control"
                  id="name"
                  name="name"
-                 type="text">
-
+                 placeholder="Modify your EatGroup name"
+                 type="text"
+                 [value]="updateeatgroup.name">
           <input [(ngModel)]="updateeatgroup.id" class="form-control"
                  id="id"
                  name="id"

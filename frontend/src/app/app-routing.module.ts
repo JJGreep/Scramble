@@ -18,7 +18,7 @@ const routes: Routes = [
   {path: 'find-restaurant', component: FindRestaurantComponent},
   {path: 'eatgroup-list', component: EatgroupListComponent},
   {path: 'eatgroup-create', component: EatgroupCreateComponent},
-  {path: 'eatgroup-update', component: EatgroupUpdateComponent},
+  {path: 'eatgroup-update/:prefillid/:prefillname', component: EatgroupUpdateComponent},
   {path: 'restaurants', component: RestaurantlistpageComponent}
 ];
 

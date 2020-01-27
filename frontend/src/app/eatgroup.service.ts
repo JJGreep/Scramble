@@ -3,11 +3,11 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { Observable} from "rxjs";
 import {Eatgroup} from "./eatgroup";
 import {CreateEatgroup} from "./createEatgroup";
-import {UpdateEatgroup} from "./updateEatgroup";
 
 @Injectable({
   providedIn: 'root'
 })
+
 
 export class EatgroupService {
   constructor(private http: HttpClient) {
@@ -21,8 +21,15 @@ export class EatgroupService {
     return this.http.post<Eatgroup>("//localhost:8080/eat_groups/createGroup", createEatgroup);
   }
 
-  public updateEatGroup(updateEatgroup: UpdateEatgroup) {
-    return this.http.post<Eatgroup>("//localhost:8080/eat_groups/updateGroup", updateEatgroup);
+  public updateEatGroup(updateEatgroup: Eatgroup) {
+    console.log(JSON.stringify(updateEatgroup));
+    console.log(updateEatgroup.name + " " +updateEatgroup.id);
+    return this.http.put<Eatgroup>("//localhost:8080/eat_groups/updateGroup/" + updateEatgroup.id, updateEatgroup);
+  }
+
+  public deleteEatGroup(deleteEatgroup: Eatgroup) {
+    console.log("Object deleteEatGroup in json: " + JSON.stringify(deleteEatgroup));
+    return this.http.delete<Eatgroup>("//localhost:8080/eat_groups/updateGroup/" + deleteEatgroup.id);
   }
 
 }

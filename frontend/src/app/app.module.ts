@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EatgroupListComponent } from "./eatgroup-list/eatgroup-list.component";
 import { EatgroupCreateComponent } from "./eatgroup-create/eatgroup-create.component";
 import { EatgroupUpdateComponent } from './eatgroup-update/eatgroup-update.component';
+import { EatgroupDeleteComponent } from './eatgroup-delete/eatgroup-delete.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { EatgroupUpdateComponent } from './eatgroup-update/eatgroup-update.compo
     RestaurantlistpageComponent,
     EatgroupListComponent,
     EatgroupCreateComponent,
-    EatgroupUpdateComponent
+    EatgroupUpdateComponent,
+    EatgroupDeleteComponent
   ],
     imports: [
         BrowserModule,

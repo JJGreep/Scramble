@@ -14,12 +14,12 @@
         <tr *ngFor="let eatGroup of eatgroups">
 
 <!--      If this group is made by you, you should get an edit button.-->
-          <td><a href="/eatgroup-update"><i class="far fa-edit"></i>{{ eatGroup.id }}</a></td>
+          <td><a href="/eatgroup-update/{{ eatGroup.id }}/{{ eatGroup.name}}"><i class="far fa-edit"></i></a></td>
 
           <td>{{ eatGroup.name }}</td>
 
 <!--      Show count of members-->
-          <td><i class="fas fa-users"></i></td>
+          <td><i class="fas fa-users"></i>xxx</td>
 
 <!--      If the user is added to this group, you should get the "check" symbol, otherwise the "plus" symbol-->
           <td>
