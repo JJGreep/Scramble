@@ -3,20 +3,20 @@
 <div class="background">
   <div class="shadow-background">
     <div class="eatgroup-update-text">
-      <h2><i class="far fa-edit"></i> Modify EatGroup</h2><br>
+      <h2><i class="far fa-edit"></i> Modify EatGroup</h2>
+
+      <div class="deletebutton">
+        <button class="btn btn-danger" (click)="deleteGroup(updateeatgroup.name)"> Delete EatGroup</button>
+      </div>
+
+      <br>
+      <p>Type the new name below and click the button</p>
       <form name="updateEG" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <input [(ngModel)]="updateeatgroup.name" class="form-control"
                  id="name"
                  name="name"
                  type="text">
-
-          <input [(ngModel)]="updateeatgroup.id" class="form-control"
-                 id="id"
-                 name="id"
-                 placeholder="fill id ID"
-                 type="text">
-
         </div>
         <button class="btn btn-primary" type="submit">Modify EatGroup</button>
       </form>

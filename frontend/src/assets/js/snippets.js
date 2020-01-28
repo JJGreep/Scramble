@@ -19,3 +19,15 @@ function searchTable() {
     }
   }
 }
+
+function show_confirm(message) {
+  show_confirm_message({
+    message: message,
+    executeYes: function() {
+      $('#text_output').html('You click "Yes" button');
+    },
+    executeNo: function() {
+      $('#text_output').html('You click "No" button');
+    }
+  });
+}

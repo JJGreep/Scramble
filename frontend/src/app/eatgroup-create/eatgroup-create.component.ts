@@ -24,17 +24,17 @@ export class EatgroupCreateComponent implements OnInit {
     var regexcheck = /[^[a-zA-Z0-9-_ ]/gi;
     if (this.createeatgroup.name == undefined)
     {
-      console.log("No EatGroup name entered!");
+      alert("No EatGroup name entered!");
     }
     else if (this.createeatgroup.name.search(regexcheck) == -1) {
       if (this.createeatgroup.name.length < 3) {
-        console.log("EatGroup name is too short!");
+        alert("EatGroup name is too short! (min. 3 characters)");
       } else {
         this.eatgroupService.createEatGroup(this.createeatgroup).subscribe(result => this.gotoEatGroupList());
-        console.log("Succesfully created")
+        alert("EatGroup name Succesfully created")
       }
     } else {
-        console.log("Did not pass the regex check");
+      alert("EatGroup name contains characters that arent't allowed.\n(use A - Z and/or numbers)");
     }
   }
 

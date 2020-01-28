@@ -101,13 +101,17 @@
   width: 100%; /* Full-width */
   border: 1px solid #ddd; /* Add a grey border */
   font-size: 18px; /* Increase font-size */
-
 }
 
-#myTable th, #myTable td {
+#myTable th {
   text-align: left; /* Left-align text */
   padding: 12px; /* Add padding */
+}
 
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+  color: #dddddd;
 }
 
 #myTable tr {
@@ -119,9 +123,9 @@
 
 #myTable tr.header, #myTable tr:hover {
   /* Add a grey background color to the table header and on hover */
-  background-color: #ddd;
-  color: #3061eb;
-
+  background-color: #3061eb;
+  /*color: #3061eb;*/
+  opacity: 0.5;
 }
 
 .btn-primary {

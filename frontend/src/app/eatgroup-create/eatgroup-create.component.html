@@ -5,7 +5,7 @@
     <div class="eatgroup-create-text">
       <h2><i class="fas fa-plus"></i> Create your own EatGroup</h2><br>
       <form name="createEG" (ngSubmit)="onSubmit()">
-        <div class="form-group" [class.has-error]="createeatgroupControl.invalid">
+        <div class="form-group">
           <label for="name" class="control-label">EatGroup: </label>
           <input [(ngModel)]="createeatgroup.name"
                  class="form-control"
@@ -13,12 +13,11 @@
                  name="name"
                  placeholder="Enter your EatGroup name"
                  type="text">
-          <span class="help-block" *ngIf="createeatgroup.invalid">Name is wrong</span>
+
          </div>
         <button
           class="btn btn-primary"
           type="submit"
-          [disabled]="createEG.invalid"
         >Create EatGroup</button>
       </form>
     </div>
