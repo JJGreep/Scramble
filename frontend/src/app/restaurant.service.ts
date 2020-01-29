@@ -20,7 +20,7 @@ export class RestaurantService {
   }
 
   public getFilteredRestaurants(filter: Filter): Observable<Restaurant[]>{
-    return this.httpClient.get<Restaurant[]>(this.apiURL + "/" + filter.cityId + "/" + filter.cuisines + "/" + filter.radius)
+    return //this.httpClient.get<Restaurant[]>(this.apiURL + "/" + filter.cityId + "/" + filter.cuisines + "/" + filter.radius)
   }
 
   handleError(error) {
