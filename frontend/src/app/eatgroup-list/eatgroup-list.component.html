@@ -7,7 +7,6 @@
 
       <button class="btn btn-primary" routerLink="/eatgroup-create"><i class="fas fa-plus"></i> Create EatGroup</button>
       <br><br>
-      <p>Type something in the input field to search the Eat Groups:</p>
 
       <input id="myInput" onkeyup="searchTable()" placeholder="Search for EatGroups.." type="text">
       <table id="myTable">
@@ -19,13 +18,13 @@
           <td>{{ eatGroup.name }}</td>
 
 <!--      Show count of members-->
-          <td><i class="fas fa-users"></i>{{ eatGroup.accounts.length }}</td>
-
-<!--      If the user is added to this group, you should get the "check" symbol, otherwise the "plus" symbol-->
-          <td>
-            <i class="fas fa-plus"></i>
-            <i class="fas fa-check-circle"></i>
+          <td><a data-toggle="tooltip" title="This Eatgroup has {{ eatGroup.accounts.length }} members"><i class="fas fa-users"></i> {{ eatGroup.accounts.length }}</a>
           </td>
+
+<!--      If the user is added to this group, you should get the "check" symbol-->
+<!--          <td>-->
+<!--            <i class="fas fa-check-circle"></i>-->
+<!--          </td>-->
         </tr>
       </table>
     </div>

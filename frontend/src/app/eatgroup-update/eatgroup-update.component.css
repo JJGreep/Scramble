@@ -95,3 +95,9 @@
   width: 16vw;
   margin-top: -16vw;
 }
+
+.deletebutton {
+
+  float: right;
+
+}

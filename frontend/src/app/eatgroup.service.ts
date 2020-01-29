@@ -29,7 +29,7 @@ export class EatgroupService {
 
   public deleteEatGroup(deleteEatgroup: Eatgroup) {
     console.log("Object deleteEatGroup in json: " + JSON.stringify(deleteEatgroup));
-    return this.http.delete<Eatgroup>("//localhost:8080/eat_groups/updateGroup/" + deleteEatgroup.id);
+    return this.http.delete<Eatgroup>("//localhost:8080/eat_groups/deleteGroup/" + deleteEatgroup.id);
   }
 
 }
