@@ -16,7 +16,7 @@
     <div *ngIf="!authenticated()" routerLink="/login" class="loginbutton">
         <a>Sign in</a>
     </div>
-    <div *ngIf="authenticated()"class="logoutbutton">
-        Sign out
+    <div *ngIf="authenticated()" routerLink="/home" class="logoutbutton" (click)="logOut()">
+      <a>Sign out</a>
     </div>
 </div>

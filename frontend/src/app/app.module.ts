@@ -21,6 +21,7 @@ import {TokenInterceptor} from "./interceptor";
 import {EatgroupUpdateComponent} from "./eatgroup-update/eatgroup-update.component";
 import { ProfileComponent } from './profile/profile.component';
 import {AccountService} from "./account.service";
+import {AuthGuardService} from "./authguardservice";
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import {AccountService} from "./account.service";
     useClass: TokenInterceptor,
     multi : true},
     RestaurantlistComponent,
+    AuthGuardService,
     AccountService],
   bootstrap: [AppComponent],
 })
