@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,6 +18,7 @@ import {EatgroupListComponent} from "./eatgroup-list/eatgroup-list.component";
 import {EatgroupCreateComponent} from "./eatgroup-create/eatgroup-create.component";
 import {ApiService} from "./api.service";
 import {TokenInterceptor} from "./interceptor";
+import {EatgroupUpdateComponent} from "./eatgroup-update/eatgroup-update.component";
 
 @NgModule({
   declarations: [

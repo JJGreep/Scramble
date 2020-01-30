@@ -23,8 +23,9 @@ export class LoginComponent implements OnInit {
       password: this.loginForm.controls.password.value
     }
     this.apiService.login(loginPayload).subscribe(data => {
-      debugger;
+      //debugger;
       if(data.status === 200) {
+
         window.localStorage.setItem('token', data.result.token);
       }else {
         this.invalidLogin = true;
