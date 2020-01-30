@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="slider-container">
-    <form #sliderForm="ngForm">
+    <form #sliderForm="ngForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <h2>Maximum Distance</h2>
         <div class="slider_holder">
@@ -47,6 +47,6 @@
         km
       </div>
     </form>
-    <button class="findButton">Find Me Food!</button>
+    <button type="submit" class="findButton">Find Me Food!</button>
   </div>
 </div>

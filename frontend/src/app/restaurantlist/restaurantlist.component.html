@@ -3,15 +3,17 @@
   <div class="list-header-text">
     <h2>The following restaurants in your specified area match your selection the best:</h2>
   </div>
-  <div *ngIf="!Restaurants">Geen restaurants</div>
+  <div *ngIf="!Restaurants" class="restaurant-not-found">
+      <div class="not-found-card">
+        We couldn't find any restaurants that match your preferences within this area :(
+      </div>
+  </div>
   <div *ngIf="Restaurants" class="restaurant-list">
     <li *ngFor="let Restaurant of Restaurants">
       <div class='reslist card'>
         <a class="dtl" [attr.href]="Restaurant.url">
-        <div class="imgdiv" >
-
+        <div class="imgdiv">
           <img class="featimg" src="{{Restaurant.photo_url}}">
-
         </div>
         <div class="spacer"></div>
         <div class="txtdiv">

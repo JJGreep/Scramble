@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RestaurantService } from "../restaurant.service"
 import {Restaurant} from "../restaurant";
+import {Filter} from "../Filter";
+
+let input = Input;
 
 @Component({
   selector: 'app-restaurantlist',
@@ -9,8 +12,10 @@ import {Restaurant} from "../restaurant";
   styleUrls: ['./restaurantlist.component.css']
 })
 export class RestaurantlistComponent implements OnInit {
-
   Restaurants: any = [];
+
+  @Input()
+  public f: Filter;
   constructor( public restaurantService: RestaurantService) { }
 
   ngOnInit() {
@@ -38,6 +43,14 @@ export class RestaurantlistComponent implements OnInit {
 
   public loadRestaurants() {
     return this.restaurantService.getRestaurants().subscribe((data: {}) => {
+      this.Restaurants = data;
+      this.checkImg(this.Restaurants);
+      this.checkUrl(this.Restaurants);
+    })
+  }
+
+  public loadFilteredRestaurants() {
+      return this.restaurantService.getFilteredRestaurants(this.f).subscribe( (data: {}) => {
       this.Restaurants = data;
       this.checkImg(this.Restaurants);
       this.checkUrl(this.Restaurants);

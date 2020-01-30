@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {ApiService} from "../api.service";
@@ -8,6 +8,7 @@ import {ApiService} from "../api.service";
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
@@ -27,8 +28,11 @@ export class LoginComponent implements OnInit {
       if(data.status === 200) {
 
         window.localStorage.setItem('token', data.result.token);
+        this.router.navigate(['/home'])
+        this.apiService.authenticated = true;
       }else {
         this.invalidLogin = true;
+        this.apiService.authenticated = false;
         alert(data.message);
       }
     });

@@ -83,3 +83,19 @@
   .header .loginbutton:hover{
     background-color: #FFBA5C;
   }
+
+  .header .logoutbutton {
+    background-color: #FFD185;
+    color: #47525E;
+    padding: 1vh 2vw;
+    text-align: center;
+    margin-top: 2px;
+    margin-right: 25px;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .header .logoutbutton:hover {
+    background-color: #FFBA5C;
+  }

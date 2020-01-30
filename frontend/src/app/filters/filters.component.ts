@@ -4,6 +4,7 @@ import {Filter} from "../Filter";
 import { FormGroup, FormControl } from '@angular/forms';
 import {CuisineService} from "../cuisine.service";
 import {Cuisine} from "../cuisine"
+import {RestaurantlistComponent} from "../restaurantlist/restaurantlist.component";
 
 @Component({
   selector: 'app-filters',
@@ -31,7 +32,7 @@ export class FiltersComponent implements OnInit {
 
   @Input()
   Cuisines: Cuisine[] = [];
-  constructor(public cuisineService: CuisineService) { }
+  constructor(public cuisineService: CuisineService, private restaurantlist: RestaurantlistComponent) { }
 
   ngOnInit() {console.log("filter loaded")
     this.loadCuisines();
@@ -49,5 +50,9 @@ export class FiltersComponent implements OnInit {
     return this.cuisineService.getCuisines().subscribe((data:Cuisine[])=>{
       this.Cuisines = data;
     })
+  }
+
+  onSubmit(){
+    this.restaurantlist.loadFilteredRestaurants();
   }
 }

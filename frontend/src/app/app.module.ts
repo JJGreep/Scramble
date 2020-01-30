@@ -46,7 +46,8 @@ import {EatgroupUpdateComponent} from "./eatgroup-update/eatgroup-update.compone
     ],
   providers: [ApiService, {provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
-    multi : true}],
-  bootstrap: [AppComponent]
+    multi : true},
+    RestaurantlistComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

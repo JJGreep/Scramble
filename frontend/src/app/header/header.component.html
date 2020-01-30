@@ -9,11 +9,14 @@
     <div routerLink="/restaurants" class="navbarbutton">
         <a>Find Restaurant</a>
     </div>
-  <div routerLink="/eatgroup-list" class="navbarbutton">
+    <div *ngIf="authenticated()" routerLink="/eatgroup-list" class="navbarbutton">
     <a>My EatGroups</a>
-  </div>
+    </div>
     <div class="spacer"></div>
-    <div routerLink="/login" class="loginbutton">
+    <div *ngIf="!authenticated()" routerLink="/login" class="loginbutton">
         <a>Sign in</a>
+    </div>
+    <div *ngIf="authenticated()"class="logoutbutton">
+        Sign out
     </div>
 </div>

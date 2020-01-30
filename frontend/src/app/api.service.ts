@@ -8,6 +8,7 @@ import {ApiResponse} from "./api.response";
 @Injectable()
 export class ApiService {
 
+  authenticated: boolean = false;
   constructor(private http: HttpClient) { }
   baseUrl: string = 'http://localhost:8080/accounts/';
 
