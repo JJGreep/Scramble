@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: 'eatgroup-create', component: EatgroupCreateComponent},
   {path: 'eatgroup-update/:prefillid/:prefillname', component: EatgroupUpdateComponent},
   {path: 'restaurants', component: RestaurantlistpageComponent},
-  {path: 'profile/:profileid/:profilename', component: ProfileComponent}
+  {path: 'profile', component: ProfileComponent}
 ];
 
 @NgModule({

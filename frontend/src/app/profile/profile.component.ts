@@ -2,6 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {Account} from "../account";
 import {AccountService} from "../account.service";
+import {Observable} from "rxjs";
+import {AccountTr} from "../AccountTr";
 
 @Component({
   selector: 'app-profile',
@@ -14,25 +16,26 @@ export class ProfileComponent implements OnInit {
 
   @Input()
   profileid: number;
-
-  @Input()
   profilename: string;
-
-  profile: Account;
+  profile: AccountTr;
 
   editingAccount: boolean = false;
 
-  constructor(private accountService: AccountService, private router: Router, private route: ActivatedRoute) {
-    this.profile = window.localStorage.getItem();
-    this.route.paramMap.subscribe(paramMap => {
-      this.profile.userName = paramMap.get("profilename");
-      this.profile.id = Number(paramMap.get("profileid"));
-    })
+  constructor(private accountService: AccountService, private router: Router) {
+
   }
 
   ngOnInit() {
     this.editingAccount = false;
+    this.loadUser();
+    this.profileid = this.profile.id;
+    this.profilename = this.profile.userName;
   }
+
+  loadUser(){
+    return this.accountService.getUser().subscribe((data) => {this.profile = data[0]})
+  }
+
 
   editProfile(){
     this.editingAccount = true;

@@ -89,6 +89,9 @@
     color: #47525E;
     border: none;
     padding: 0.5vw 2vw;
+    text-align: center;
+    margin-top: 2px;
+    margin-right: 25px;
     border-radius: 0.5vw;
     cursor: pointer;
     cursor: hand;
