@@ -1,1 +1,105 @@
-<p>profile works!</p>
+<div class="background">
+  <div class="shadow-white-background">
+      <div class="profile-header">
+        <h1>Account Settings</h1>
+      </div>
+
+      <div class="usersettings">
+        <div *ngIf="!editingAccount" class="profile-no-edit">
+          <div class="username">
+            <label>Username:</label>
+            <p>{{profile.userName}}</p>
+          </div>
+          <div class="email">
+            <label>Email Address:</label>
+            <p>{{profile.email}}</p>
+          </div>
+
+          <div class="settingbuttons">
+            <div class="button edit" (click)="editProfile()">
+              <a>Edit Account</a>
+            </div>
+            <div class="button delete" (click)="deleteProfile()">
+              <a>Delete Account</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div *ngIf="editingAccount" class="profile-edit">
+          <form (ngSubmit)="saveProfile()">
+            <div class="username">
+              <label>Username:</label>
+              <input type="text" [(ngModel)]="profile.userName" id="username" name="username" class="form-control input" placeholder="Username">
+            </div>
+
+            <div class="email">
+              <label>Email Address:</label>
+              <input type="email" [(ngModel)]="profile.email" id="email" name="email" class="form-control input" placeholder="Email Address">
+            </div>
+
+            <div class="currentpassword">
+              <label>Current Password:</label>
+              <input type="password" id="currentpassword" name="currentpassword" class="form-control input" placeholder="Current Password">
+            </div>
+
+            <div class="newpassword">
+              <label>New Password:</label>
+              <input type="password" id="newpassword" name="newpassword" class="form-control input" placeholder="New Password">
+            </div>
+
+            <button type="submit" class="save-button button">Save Settings</button>
+          </form>
+        </div>
+
+
+      </div>
+
+      <div class="favorites">
+        <div *ngIf="!Favorites" class="favourites-not-found">
+          You don't have any favourites yet!
+        </div>
+        <div *ngIf="Favorites" class="favourites-list">
+          <li *ngFor="let Favorite of Favorites">
+            <div class="favlist card">
+              <a class="dtl" [attr.href]="Favorite.url">
+                <div class="imgdiv">
+                  <img class="featimg" src="{{Favorite.photo_url}}">
+                </div>
+                <div class="spacer"></div>
+                <div class="txtdiv">
+                  <h2 class="favtext">{{Favorite.name}}</h2>
+                  <p class="favtext">Cuisines: {{Favorite.cuisines}}</p>
+                  <p class="favtext">Average cost: ${{Favorite.average_cost_for_two}}</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </div>
+      </div>
+
+      <div class="history">
+        <div *ngIf="!History" class="history-not-found">
+          You don't have any favourites yet!
+        </div>
+        <div *ngIf="History" class="favourites-list">
+          <li *ngFor="let Hist of History">
+            <div class="favlist card">
+              <a class="dtl" [attr.href]="Hist.url">
+                <div class="imgdiv">
+                  <img class="featimg" src="{{Hist.photo_url}}">
+                </div>
+                <div class="spacer"></div>
+                <div class="txtdiv">
+                  <h2 class="favtext">{{Hist.name}}</h2>
+                  <p class="favtext">Cuisines: {{Hist.cuisines}}</p>
+                  <p class="favtext">Average cost: ${{Hist.average_cost_for_two}}</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </div>
+      </div>
+  </div>
+</div>

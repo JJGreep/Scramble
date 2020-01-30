@@ -8,6 +8,7 @@ import { EatgroupListComponent } from "./eatgroup-list/eatgroup-list.component";
 import { EatgroupCreateComponent } from "./eatgroup-create/eatgroup-create.component";
 import { EatgroupUpdateComponent } from "./eatgroup-update/eatgroup-update.component";
 import { RestaurantlistpageComponent } from "./restaurantlistpage/restaurantlistpage.component";
+import {ProfileComponent} from "./profile/profile.component";
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'eatgroup-list', component: EatgroupListComponent},
   {path: 'eatgroup-create', component: EatgroupCreateComponent},
   {path: 'eatgroup-update/:prefillid/:prefillname', component: EatgroupUpdateComponent},
-  {path: 'restaurants', component: RestaurantlistpageComponent}
+  {path: 'restaurants', component: RestaurantlistpageComponent},
+  {path: 'profile/:profileid/:profilename', component: ProfileComponent}
 ];
 
 @NgModule({
