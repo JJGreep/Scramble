@@ -13,7 +13,7 @@ let input = Input;
 })
 export class RestaurantlistComponent implements OnInit {
   Restaurants: any = [];
-
+  
   @Input()
   public f: Filter;
   constructor( public restaurantService: RestaurantService) { }

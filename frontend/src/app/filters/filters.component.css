@@ -26,6 +26,11 @@
 }
 .checks{
 }
+
+.submit-button{
+  text-align: center;
+}
+
 .findButton{
   background-color: #FFD185;
   color: #47525E;

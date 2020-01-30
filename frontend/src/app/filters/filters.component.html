@@ -1,52 +1,55 @@
 <div class="filterdiv">
-  <div class="checks">
-    <h2>I feel like eating...</h2>
-    <div class="filter-text">
-      <div class="first-half-cuisines">
-        <li *ngFor="let Cuisine of Cuisines | slice: 0: Cuisines.length / 2">
-          <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
-        </li>
-      </div>
-      <div class="second-half-cuisines">
-        <li *ngFor="let Cuisine of Cuisines | slice: Cuisines.length / 2: Cuisines.length">
-          <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
-        </li>
+
+  <form #inputForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="checks">
+      <h2>I feel like eating...</h2>
+      <div class="filter-text">
+        <div class="first-half-cuisines">
+          <li *ngFor="let Cuisine of Cuisines | slice: 0: Cuisines.length / 2">
+            <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/><label>{{Cuisine.cuisine_name}}</label>
+          </li>
+        </div>
+        <div class="second-half-cuisines">
+          <li *ngFor="let Cuisine of Cuisines | slice: Cuisines.length / 2: Cuisines.length">
+            <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
+          </li>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="slider-container">
-    <form #sliderForm="ngForm" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <h2>Maximum Distance</h2>
-        <div class="slider_holder">
-          1
+    <div class="slider-container">
+        <div class="form-group">
+          <h2>Maximum Distance</h2>
+          <div class="slider_holder">
+            1
+            <input
+              type="range"
+              min="1"
+              max="20"
+              class="slider"
+              id="distance"
+              [(ngModel)]="sliderValue"
+              name="slider"
+              required
+              #slider="ngModel"
+            />
+            20
+          </div>
           <input
-            type="range"
+            type="number"
+            id="name"
+            name="name"
+            class="form-control slidertext"
             min="1"
             max="20"
-            class="slider"
-            id="distance"
-            [(ngModel)]="sliderValue"
-            name="slider"
             required
+            [(ngModel)]="sliderValue"
             #slider="ngModel"
           />
-          20
+          km
         </div>
-        <input
-          type="number"
-          id="name"
-          name="name"
-          class="form-control slidertext"
-          min="1"
-          max="20"
-          required
-          [(ngModel)]="sliderValue"
-          #slider="ngModel"
-        />
-        km
-      </div>
-    </form>
-    <button type="submit" class="findButton">Find Me Food!</button>
-  </div>
+    </div>
+    <div class="submit-button">
+      <button type="submit" class="findButton">Find Me Food!</button>
+    </div>
+  </form>
 </div>

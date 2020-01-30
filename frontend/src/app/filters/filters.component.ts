@@ -5,6 +5,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import {CuisineService} from "../cuisine.service";
 import {Cuisine} from "../cuisine"
 import {RestaurantlistComponent} from "../restaurantlist/restaurantlist.component";
+import {filter} from "rxjs/operators";
 
 @Component({
   selector: 'app-filters',
@@ -13,13 +14,15 @@ import {RestaurantlistComponent} from "../restaurantlist/restaurantlist.componen
 })
 export class FiltersComponent implements OnInit {
   @Input() filterChecks: FilterCheck[] = [
-     new FilterCheck(false,"Italian", 0), //55
-     new FilterCheck(false,"Vegan", 1),
-     new FilterCheck(false,"Halal", 2),
-     new FilterCheck(false,"Seafood", 3),
-     new FilterCheck(false,"Chinese", 4),
-     new FilterCheck(false,"Sushi", 5)
+     // new FilterCheck(false,"Italian", 0), //55
+    //      // new FilterCheck(false,"Vegan", 1),
+    //      // new FilterCheck(false,"Halal", 2),
+    //      // new FilterCheck(false,"Seafood", 3),
+    //      // new FilterCheck(false,"Chinese", 4),
+    //      // new FilterCheck(false,"Sushi", 5)
+
    ];
+
 
 
   form: FormGroup = new FormGroup({
@@ -45,6 +48,7 @@ export class FiltersComponent implements OnInit {
 
     this.toggle.emit(checkedFilters.map(x => x.cuisineId));
   }
+
 
   public loadCuisines(){
     return this.cuisineService.getCuisines().subscribe((data:Cuisine[])=>{

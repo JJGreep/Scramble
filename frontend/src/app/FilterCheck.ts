@@ -1,10 +1,10 @@
 export class FilterCheck{
   private _checked: boolean;
-  private _cuisine: string;
+  private _cuisine: String;
   private _cuisineId: number;
 
 
-  constructor(checked: boolean, cuisine: string, cuisineId: number) {
+  constructor(checked: boolean, cuisine: String, cuisineId: number) {
     this._checked = checked;
     this._cuisine = cuisine;
     this._cuisineId = cuisineId;
@@ -18,11 +18,11 @@ export class FilterCheck{
     this._checked = value;
   }
 
-  get cuisine(): string {
+  get cuisine(): String {
     return this._cuisine;
   }
 
-  set cuisine(value: string) {
+  set cuisine(value: String) {
     this._cuisine = value;
   }
 

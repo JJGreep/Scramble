@@ -19,6 +19,7 @@ import {EatgroupCreateComponent} from "./eatgroup-create/eatgroup-create.compone
 import {ApiService} from "./api.service";
 import {TokenInterceptor} from "./interceptor";
 import {EatgroupUpdateComponent} from "./eatgroup-update/eatgroup-update.component";
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {EatgroupUpdateComponent} from "./eatgroup-update/eatgroup-update.compone
     RestaurantlistpageComponent,
     EatgroupListComponent,
     EatgroupCreateComponent,
-    EatgroupUpdateComponent
+    EatgroupUpdateComponent,
+    ProfileComponent
   ],
     imports: [
         BrowserModule,

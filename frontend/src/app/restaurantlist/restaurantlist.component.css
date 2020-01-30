@@ -105,21 +105,19 @@ li{
 .prev-btn{
     border-radius: 20%;
     float: left;
-    opacity: 80%;
 }
 
 .prev-btn:hover{
-    opacity: 100%;
+    background-color: #FFBA5C;
 }
 
 .next-btn{
     border-radius: 20%;
     float: right;
-    opacity: 80%;
 }
 
 .next-btn:hover{
-    opacity: 100%;
+    background-color: #FFBA5C;
 }
 
 .modal-btns{
