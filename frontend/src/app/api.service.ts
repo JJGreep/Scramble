@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Account} from "./account";
 
 import {Observable} from "rxjs/index";
 import {ApiResponse} from "./api.response";
@@ -9,7 +10,7 @@ import {ApiResponse} from "./api.response";
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-  baseUrl: string = 'http://localhost:8080/accounts/';
+  baseUrl: string = 'http://localhost:8080/accounts';
 
   login(loginPayload) : Observable<ApiResponse> {
     return this.http.post<ApiResponse>('http://localhost:8080/' + 'token/generate-token', loginPayload);
@@ -24,7 +25,7 @@ export class ApiService {
   }
 
   createUser(user: Account): Observable<ApiResponse> {
-    return this.http.post<ApiResponse>(this.baseUrl, user);
+    return this.http.post<ApiResponse>(this.baseUrl + "/createAccount", user);
   }
 
   updateUser(user: Account): Observable<ApiResponse> {
