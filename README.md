@@ -3,7 +3,7 @@ Java Full Stack Project
 
 API-Key - a71057b41a6526cec5e3cc053ad34915
 
-**required**
+**Required**
 - Postgres
 
 **TODO to run the application:**
@@ -22,3 +22,8 @@ API-Key - a71057b41a6526cec5e3cc053ad34915
 - Run BackendApplication.java
 
 **Database**
+
+**To run the tests**
+- The tests are found in the test folder in the back-end
+- To run all the tests at once, run the first test in the file
+- To run the test separately, run a test that is available below the first test
