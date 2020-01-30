@@ -13,13 +13,12 @@ API-Key - a71057b41a6526cec5e3cc053ad34915
 1. https://github.com/JJGreep/Scramble
 2. https://github.com/JJGreep/Scramble-backend
 
-- Change your password to your own postgres password in application.properties in the back-end repo so it can connect to the database.
-
 **To start the front-end:**
 - use command: ng serve --open
 
 **To start the back-end:**
 - make sure your sdk is setup to java 11
+- Change your password to your own postgres password in application.properties so it can connect to the database.
 - run BackendApplication.java
 
 **Database**
