@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   }
   logOut(){
     window.localStorage.removeItem('token');
+    window.localStorage.removeItem('user');
     this.apiService.authenticated = false;
   }
 }

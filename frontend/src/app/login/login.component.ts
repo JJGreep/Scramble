@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
       if(data.status === 200) {
 
         window.localStorage.setItem('token', data.result.token);
+        window.localStorage.setItem('user', this.loginForm.controls.username.value)
         this.router.navigate(['/home'])
         this.apiService.authenticated = true;
       }else {
@@ -40,6 +41,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     window.localStorage.removeItem('token');
+    window.localStorage.removeItem('user');
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.compose([Validators.required])],
       password: ['', Validators.required]
