@@ -14,5 +14,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  logOut(){
+    window.localStorage.removeItem('token');
+    this.apiService.authenticated = false;
+  }
 }
+
