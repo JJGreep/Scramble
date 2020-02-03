@@ -87,7 +87,8 @@
   .header .logoutbutton {
     background-color: #FFD185;
     color: #47525E;
-    padding: 1vh 2vw;
+    border: none;
+    padding: 0.5vw 2vw;
     text-align: center;
     margin-top: 2px;
     margin-right: 25px;

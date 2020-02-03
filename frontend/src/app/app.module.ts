@@ -20,6 +20,7 @@ import {ApiService} from "./api.service";
 import {TokenInterceptor} from "./interceptor";
 import {EatgroupUpdateComponent} from "./eatgroup-update/eatgroup-update.component";
 import { ProfileComponent } from './profile/profile.component';
+import {AccountService} from "./account.service";
 import {AuthGuardService} from "./authguardservice";
 
 @NgModule({
@@ -49,8 +50,10 @@ import {AuthGuardService} from "./authguardservice";
     ],
   providers: [ApiService, {provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
-    multi : true}, AuthGuardService,
-    RestaurantlistComponent],
+    multi : true},
+    RestaurantlistComponent,
+    AuthGuardService,
+    AccountService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
