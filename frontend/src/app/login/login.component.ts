@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
 
         window.localStorage.setItem('token', data.result.token);
         window.localStorage.setItem('user', this.loginForm.controls.username.value)
+        window.localStorage.getItem('user')
         this.router.navigate(['/home'])
         this.apiService.authenticated = true;
       }else {

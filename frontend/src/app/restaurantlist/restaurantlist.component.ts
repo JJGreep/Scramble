@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RestaurantService } from "../restaurant.service"
 import {Restaurant} from "../restaurant";
 import {Filter} from "../Filter";
+import {FiltersComponent} from "../filters/filters.component";
 
 let input = Input;
 
@@ -12,10 +13,12 @@ let input = Input;
   styleUrls: ['./restaurantlist.component.css']
 })
 export class RestaurantlistComponent implements OnInit {
-  Restaurants: any = [];
-  
   @Input()
-  public f: Filter;
+  Restaurants: Restaurant[];
+
+  @Input()
+  f: Filter;
+
   constructor( public restaurantService: RestaurantService) { }
 
   ngOnInit() {
@@ -42,18 +45,24 @@ export class RestaurantlistComponent implements OnInit {
   }
 
   public loadRestaurants() {
-    return this.restaurantService.getRestaurants().subscribe((data: {}) => {
+    return this.restaurantService.getRestaurants().subscribe((data) => {
       this.Restaurants = data;
       this.checkImg(this.Restaurants);
       this.checkUrl(this.Restaurants);
     })
   }
 
-  public loadFilteredRestaurants() {
-      return this.restaurantService.getFilteredRestaurants(this.f).subscribe( (data: {}) => {
-      this.Restaurants = data;
+  trackElement(index: number, element: Restaurant) {
+    return element ? element.id : null
+  }
+
+  public loadFilteredRestaurants(f: Filter
+  ) { this.f = f;
+      return this.restaurantService.getFilteredRestaurants(f).subscribe( (data) => {
+      this.Restaurants = [...data];
       this.checkImg(this.Restaurants);
       this.checkUrl(this.Restaurants);
+
     })
   }
 }

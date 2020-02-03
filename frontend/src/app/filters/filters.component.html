@@ -5,13 +5,13 @@
       <h2>I feel like eating...</h2>
       <div class="filter-text">
         <div class="first-half-cuisines">
-          <li *ngFor="let Cuisine of Cuisines | slice: 0: Cuisines.length / 2">
-            <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/><label>{{Cuisine.cuisine_name}}</label>
+          <li *ngFor="let FilterCheck of FilterChecks | slice: 0: FilterChecks.length / 2">
+            <input type="radio" name="checkboxes" [(ngModel)]="FilterCheck.checked"  value="{{FilterCheck.cuisineId}}"/><label>{{FilterCheck.cuisine}}</label>
           </li>
         </div>
         <div class="second-half-cuisines">
-          <li *ngFor="let Cuisine of Cuisines | slice: Cuisines.length / 2: Cuisines.length">
-            <input type="checkbox" name="checkboxes" value="{{Cuisine.cuisine_name}}"/>{{Cuisine.cuisine_name}}
+          <li *ngFor="let FilterCheck of FilterChecks | slice: FilterChecks.length / 2: FilterChecks.length">
+            <input type="radio" name="checkboxes" [(ngModel)]="FilterCheck.checked" value="{{FilterCheck.cuisineId}}"/>{{FilterCheck.cuisine}}
           </li>
         </div>
       </div>

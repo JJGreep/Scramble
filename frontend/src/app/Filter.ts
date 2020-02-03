@@ -6,7 +6,6 @@ export class Filter{
   public lat: number;
   public lon: number;
 
-
   constructor()
 
   constructor(radius?: number, cuisines?: string, start?: number, count?:number, lat?:number, lon?:number) {

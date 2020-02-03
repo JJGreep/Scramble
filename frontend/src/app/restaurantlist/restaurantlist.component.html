@@ -9,7 +9,7 @@
       </div>
   </div>
   <div *ngIf="Restaurants" class="restaurant-list">
-    <li *ngFor="let Restaurant of Restaurants">
+    <li *ngFor="let Restaurant of Restaurants" >
       <div class='reslist card'>
         <a class="dtl" [attr.href]="Restaurant.url">
         <div class="imgdiv">
@@ -24,10 +24,10 @@
         </a>
       </div>
     </li>
-    <div class="modal-btns">
-      <button class="button prev-btn">&lt;</button>
-      <button class="button next-btn">&gt;</button>
-    </div>
+<!--    <div class="modal-btns">-->
+<!--      <button class="button prev-btn" >&lt;</button>-->
+<!--      <button class="button next-btn">&gt;</button>-->
+<!--    </div>-->
   </div>
 </div>
 

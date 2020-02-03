@@ -5,6 +5,7 @@ import {Restaurant} from "./restaurant";
 import {catchError, retry, } from "rxjs/operators";
 import {Filter} from './Filter'
 import {Cuisine} from "./cuisine";
+import {AccountTr} from "./AccountTr";
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +19,6 @@ export class CuisineService{
     return this.httpClient.get<Cuisine[]>(this.apiURL).pipe(retry(1), catchError(this.handleError))
 
   }
-
 
   handleError(error) {
     let errorMessage = '';
