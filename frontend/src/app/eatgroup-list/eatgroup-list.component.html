@@ -3,28 +3,23 @@
 <div class="background">
   <div class="shadow-background">
     <div class="eatgroup-list-text">
-      <h2>My EatGroups</h2>
+      <h2>My EatGroups <button class="btn btn-success deletebutton" routerLink="/eatgroup-create">Create EatGroup</button></h2>
 
-      <button class="btn btn-primary" routerLink="/eatgroup-create"><i class="fas fa-plus"></i> Create EatGroup</button>
-      <br><br>
+      <br>
 
       <input id="myInput" onkeyup="searchTable()" placeholder="Search for EatGroups.." type="text">
-      <table id="myTable">
+      <table id="myTable" class="table">
         <tr *ngFor="let eatGroup of eatgroups">
 
 <!--      If this group is made by you, you should get an edit button.-->
           <td><a href="/eatgroup-update/{{ eatGroup.id }}/{{ eatGroup.name}}"><i class="far fa-edit"></i></a></td>
 
-          <td>{{ eatGroup.name }}</td>
+          <td><a href="/eatgroup-update/{{ eatGroup.id }}/{{ eatGroup.name}}">{{ eatGroup.name }}</a></td>
 
 <!--      Show count of members-->
-          <td><a data-toggle="tooltip" title="This Eatgroup has {{ eatGroup.accounts.length }} members"><i class="fas fa-users"></i> {{ eatGroup.accounts.length }}</a>
+          <td><a href="/eatgroup-update/{{ eatGroup.id }}/{{ eatGroup.name}}" data-toggle="tooltip" title="This Eatgroup has {{ eatGroup.accounts.length }} members"><i class="fas fa-users"></i> {{ eatGroup.accounts.length}}</a>
           </td>
 
-<!--      If the user is added to this group, you should get the "check" symbol-->
-<!--          <td>-->
-<!--            <i class="fas fa-check-circle"></i>-->
-<!--          </td>-->
         </tr>
       </table>
     </div>

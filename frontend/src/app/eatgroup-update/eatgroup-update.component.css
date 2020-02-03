@@ -97,7 +97,14 @@
 }
 
 .deletebutton {
-
   float: right;
+}
+
+.memberrow {
+  vertical-align: middle;
+}
+
+.addmember {
+  vertical-align: bottom;
 
 }

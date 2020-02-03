@@ -2,7 +2,7 @@ export class Eatgroup {
 
   public id : number;
   public name: string;
-  public accounts: [];
+  public accounts: Account[];
 
   constructor()
 

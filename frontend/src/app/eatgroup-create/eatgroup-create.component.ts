@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {EatgroupService} from "../eatgroup.service";
 import {CreateEatgroup} from "../createEatgroup";
+import {Account} from "../account";
 
 @Component({
   selector: 'app-eatgroup-create',
@@ -11,16 +12,26 @@ import {CreateEatgroup} from "../createEatgroup";
 export class EatgroupCreateComponent implements OnInit {
 
   createeatgroup: CreateEatgroup;
+  currentAccount: Account;
 
   constructor(private eatgroupService: EatgroupService, private router: Router) {
 
     this.createeatgroup = new CreateEatgroup();
+
+    // this.currentAccount = new Account();
+    // this.currentAccount.id = 600;
+    // this.currentAccount.userName = "wdebitewari";
+    // this.currentAccount.password = "JHGFD";
+    // this.currentAccount.email = "wikash@debitewari.nl";
+
+    // this.createeatgroup.accounts.push(t);
   }
 
   ngOnInit(){
   }
 
   onSubmit(){
+
     var regexcheck = /[^[a-zA-Z0-9-_ ]/gi;
     if (this.createeatgroup.name == undefined)
     {
@@ -41,5 +52,7 @@ export class EatgroupCreateComponent implements OnInit {
   gotoEatGroupList(){
     this.router.navigate(['/eatgroup-list']);
   }
-}
 
+
+
+}

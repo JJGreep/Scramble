@@ -18,7 +18,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'find-restaurant', component: FindRestaurantComponent},
-  {path: 'eatgroup-list', component: EatgroupListComponent, canActivate: [AuthGuardService]},
+  {path: 'eatgroup-list', component: EatgroupListComponent},
+  // {path: 'eatgroup-list', component: EatgroupListComponent, canActivate: [AuthGuardService]},
   {path: 'eatgroup-create', component: EatgroupCreateComponent},
   {path: 'eatgroup-update/:prefillid/:prefillname', component: EatgroupUpdateComponent},
   {path: 'restaurants', component: RestaurantlistpageComponent}

@@ -31,3 +31,4 @@ function show_confirm(message) {
     }
   });
 }
+

@@ -138,14 +138,19 @@
   right: 0;
 }
 
-.fa-check-circle {
-  color: limegreen;
+.fa-check-circle { color: limegreen; }
+.fa-plus { color: orange; }
+.fa-edit { color: white; }
+.fa-users { color: white; }
+
+
+.deletebutton {   float: right; }
+
+
+a { color: white; }
+a:link visited active{ color: white ;}
+a:hover {
+  color: #ff861f;
+  font-style: oblique;
 }
 
-.fa-plus {
-  color: orange;
-}
-
-.fa-edit {
-  color: #007bff;
-}

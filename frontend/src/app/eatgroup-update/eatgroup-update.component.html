@@ -1,17 +1,15 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
 
 <div class="background">
   <div class="shadow-background">
     <div class="eatgroup-update-text">
-      <h2><i class="far fa-edit"></i> Modify EatGroup</h2>
-
-      <div class="deletebutton">
-        <button class="btn btn-danger" (click)="deleteGroup(updateeatgroup.name)"> Delete EatGroup</button>
-      </div>
-
+      <h2><i class="far fa-edit"></i> Modify EatGroup
+        <button (click)="deleteGroup(updateeatgroup.name)" class="btn btn-danger deletebutton">Delete EatGroup</button>
+      </h2>
       <br>
       <p>Type the new name below and click the button</p>
-      <form name="updateEG" (ngSubmit)="onSubmit()">
+      <form (ngSubmit)="onSubmit()" name="updateEG">
         <div class="form-group">
           <input [(ngModel)]="updateeatgroup.name" class="form-control"
                  id="name"
@@ -19,7 +17,55 @@
                  type="text">
         </div>
         <button class="btn btn-primary" type="submit">Modify EatGroup</button>
+        <button (click)="gotoEatGroupList()" class="btn btn-secondary deletebutton">Cancel</button>
       </form>
+      <hr>
+      <br>
+      <h4>Add member to current EatGroup</h4>
+      <table>
+        <tr>
+          <td class="addmember">Select member:
+            <select class="form-control" id="addmember" name="addmember">
+              <option *ngFor="let member of membersObj">
+                {{member.userName}}
+              </option>
+            </select>
+          </td>
+          <td class="addmember">&nbsp;
+            <button (click)="addMemberToAccounts()" class="btn btn-success">Add Member</button>
+          </td>
+        </tr>
+      </table>
+
+      <hr>
+
+
+      <br><
+
+      <h4>Current members</h4>
+      <div class="table-responsive">
+        <table *ngFor="let eatGroup of eatgroups" class="table table-sm table-hover table-dark" id="accounts">
+          <tbody>
+          <tr>
+            <td *ngFor="let account of eatGroup.accounts | slice:0 :1">
+              <a data-toggle="tooltip" title="This member cannot be deleted.">&nbsp;<strong>{{ account.userName }} <i> (admin)</i></strong></a>
+            </td>
+            <td></td>
+          </tr>
+
+          <tr *ngFor="let account of eatGroup.accounts | slice:1" class="memberrow">
+            <td class="memberrow">&nbsp;<strong>{{ account.userName }}</strong></td>
+
+            <td>
+              <button (click)="deleteMember(account.userName)" class="btn btn-danger deletebutton">Delete
+              </button>
+            </td>
+
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
